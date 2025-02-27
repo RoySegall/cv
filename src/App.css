@@ -3,6 +3,9 @@
   max-width: 1280px;
   padding: .75em;
   margin: 0 auto;
+
+  --lightPurple: #901fbd;
+  --darkPurple: #4e2056;
 }
 
 * {

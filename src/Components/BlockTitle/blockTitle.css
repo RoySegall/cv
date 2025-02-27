@@ -1,0 +1,11 @@
+#blockTitle {
+    font-size: 1.5rem;
+    border-bottom: 3px solid var(--darkPurple);
+    width: 95%;
+    display: block;
+    color: var(--darkPurple);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1.25px;
+    padding-bottom: .25em;
+}
