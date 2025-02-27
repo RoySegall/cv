@@ -1,5 +1,8 @@
 import './header.css';
 import avatar from './avatar.jpg';
+import phone from '../../assets/phone.svg';
+import email from '../../assets/email.svg';
+import link from '../../assets/link.svg';
 
 export function Header() {
     return <header>
@@ -7,9 +10,9 @@ export function Header() {
             <h1>Roy Segall</h1>
             <h2>Full Stack Developer</h2>
             <ul>
-                <li>0546857077</li>
-                <li>roy@segall.io</li>
-                <li>www.segall.io</li>
+                <li><img src={phone} /> 0546857077</li>
+                <li><img src={email} /> roy@segall.io</li>
+                <li><img src={link}/> www.segall.io</li>
             </ul>
 
             <p>
@@ -18,6 +21,6 @@ export function Header() {
             </p>
         </div>
 
-        <img src={avatar} alt="avatar"/>
+        <img src={avatar} className='avatar' alt="avatar"/>
     </header>
 }

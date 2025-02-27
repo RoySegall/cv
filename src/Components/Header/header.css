@@ -5,7 +5,7 @@ header {
     padding-bottom: 1em;
 }
 
-img {
+.avatar {
     height: 150px;
     border-radius: 50%;
 }
@@ -36,7 +36,14 @@ header ul {
 }
 
 header ul li {
-    padding-right: 1em;
+    padding-right: 2em;
+    display: flex;
+    align-items: center;
+}
+
+header ul li img {
+    height: 1em;
+    padding-right: .25em;
 }
 
 header p {
