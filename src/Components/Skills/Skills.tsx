@@ -1,6 +1,8 @@
 import "./skills.css";
 import {BlockTitle} from "../BlockTitle";
 import type {ReactNode} from "react";
+import {JobDescription} from "../JobDescription";
+import {Spacer} from "../Spacer";
 
 function Block({title, children}: {title: string, children: ReactNode}) {
     return <div id='block'>
@@ -32,7 +34,7 @@ export function Skills() {
 
         <Block title={'Languages'}>
             <Language language='Hebrew' level='Native' rate={5} />
-            <span id='spacer'></span>
+            <Spacer />
             <Language language='English' level='Proficient' rate={4} />
         </Block>
 
@@ -43,7 +45,21 @@ export function Skills() {
         </Block>
 
         <Block title={'VOLUNTEERING'}>
-            asasd
+            <JobDescription
+                placeName={'Company'}
+                period={{start: '2021', end: '2021'}}
+                position={'Frontend Developer'}
+                paragraph={<>
+                </>}
+            />
+            <Spacer />
+            <JobDescription
+                placeName={'Company'}
+                period={{start: '2021', end: '2021'}}
+                position={'Frontend Developer'}
+                paragraph={<>
+                </>}
+            />
         </Block>
 
     </div>

@@ -1,0 +1,6 @@
+#spacer {
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+    border-bottom: 1px dashed var(--gray);
+}
