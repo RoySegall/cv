@@ -1,8 +1,8 @@
 import "./skills.css";
 import {BlockTitle} from "../BlockTitle";
+import type {ReactNode} from "react";
 import {JobDescription, JobDescriptionProps} from "../JobDescription";
 import {Spacer} from "../Spacer";
-import type {ReactNode} from "react";
 
 function Block({title, children}: {title: string, children: ReactNode}) {
     return <div id='block'>
@@ -10,6 +10,19 @@ function Block({title, children}: {title: string, children: ReactNode}) {
         <p>
             {children}
         </p>
+    </div>
+}
+
+function Language({language, level, rate}: {language: string, level: string, rate: number}) {
+    return <div id='language'>
+        <div id='description'>
+            <span className='name'>{language}</span>
+            <span className='level'>{level}</span>
+        </div>
+
+        <ul>
+            {Array.from({length: 5}).map((_, i) => <li key={i} className={i + 1 > rate ? 'off' : ''}>&nbsp;</li>)}
+        </ul>
     </div>
 }
 
@@ -31,7 +44,7 @@ const places: JobDescriptionProps[] = [
         paragraph: <>
             Wrote kids book about my black cat. Later on this will be a side hustle dedicated to author kids books about
             cats which eventually donate half of the incomes to animals in need. The book can be purchased through a
-            dedicated site or in steimatzky – one of israel top books store.
+            dedicated site or in steimatzky – one of israel top books store
         </>
     },
 ]
@@ -41,6 +54,13 @@ export function Skills() {
         'NodeJS', 'Javascript', 'Typescript', 'PHP', 'React', 'Swift', 'CI/CD', 'NextJS', 'Gatsby',
     ];
     return <div id='skills'>
+
+        <Block title={'Languages'}>
+            <Language language='Hebrew' level='Native' rate={5} />
+            <Spacer />
+            <Language language='English' level='Proficient' rate={4} />
+        </Block>
+
         <Block title={'Skills'}>
             <div id='technologies'>
                 {skills.map((skill, i) => <span key={i} className='skill'>{skill}</span>)}
