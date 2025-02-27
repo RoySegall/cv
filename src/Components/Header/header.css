@@ -29,13 +29,13 @@ h2 {
     color: var(--lightPurple);
 }
 
-ul {
+header ul {
     display: flex;
     list-style-type: none;
     padding-bottom: .75em;
 }
 
-ul li {
+header ul li {
     padding-right: 1em;
 }
 

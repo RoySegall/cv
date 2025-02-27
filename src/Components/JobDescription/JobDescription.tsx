@@ -1,7 +1,7 @@
 import "./jobDescription.css";
 import type {ReactNode} from "react";
 
-interface JobDescription {
+export interface JobDescriptionProps {
     placeName: string;
     position: string;
     period: {
@@ -12,11 +12,10 @@ interface JobDescription {
     paragraph?: ReactNode;
 }
 
-export function JobDescription({placeName, period, position, items, paragraph}: JobDescription) {
+export function JobDescription({placeName, period, position, items, paragraph}: JobDescriptionProps) {
     return <div id='job-description'>
-        {placeName}
-        {period.end}
-        {position}
+        <span className='position'>{position}</span>, <span className='place-name'>{placeName}</span>
+        <span className='period'>{period.start} - {period.end}</span>
 
         {paragraph && <>hi {paragraph}</>}
         {items && <ul>{items.map((item,i) => <li key={i}>{item}</li>)}</ul>}
