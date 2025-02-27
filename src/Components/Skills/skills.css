@@ -18,7 +18,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
-    padding-top: 1em;
+
 }
 
 #description .name {
@@ -47,4 +47,16 @@
     padding-bottom: .5em;
     display: block;
     border-bottom: 1px dashed var(--gray);
+}
+
+#technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#technologies span {
+    border-bottom: solid 1px black;
+    padding-bottom: .5em;
+    font-weight: 500;
 }

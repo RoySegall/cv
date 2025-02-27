@@ -21,11 +21,13 @@ function Language({language, level, rate}: {language: string, level: string, rat
         <ul>
             {Array.from({length: 5}).map((_, i) => <li key={i} className={i + 1 > rate ? 'off' : ''}>&nbsp;</li>)}
         </ul>
-
     </div>
 }
 
 export function Skills() {
+    const skills = [
+        'NodeJS', 'Javascript', 'Typescript', 'PHP', 'React', 'Swift', 'CI/CD', 'NextJS', 'Gatsby',
+    ];
     return <div id='skills'>
 
         <Block title={'Languages'}>
@@ -35,7 +37,9 @@ export function Skills() {
         </Block>
 
         <Block title={'Skills'}>
-            asasd
+            <div id='technologies'>
+                {skills.map((skill, i) => <span key={i} className='skill'>{skill}</span>)}
+            </div>
         </Block>
 
         <Block title={'VOLUNTEERING'}>
