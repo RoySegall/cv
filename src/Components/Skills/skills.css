@@ -7,9 +7,44 @@
 }
 
 #block {
-    padding-bottom: 1em;
+    padding-bottom: 3em;
 }
 
 #block p {
     padding-top: .5em;
+}
+
+#language {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding-top: 1em;
+}
+
+#description .name {
+    font-weight: 500;
+    padding-bottom: .5em;
+    color: var(--darkPurple)
+}
+
+#description .level {
+    font-weight: 200;
+}
+
+#language ul li {
+    background: var(--lightPurple);
+    border-radius: 50%;
+    margin-right: .25em;
+    height: 1.25em;
+}
+
+#language ul li.off {
+    background: var(--gray);
+}
+
+#spacer {
+    padding-top: .5em;
+    padding-bottom: .5em;
+    display: block;
+    border-bottom: 1px dashed var(--gray);
 }
