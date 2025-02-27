@@ -20,8 +20,8 @@
     list-style-position: inside;
 }
 
-#job-description ul li {
-    padding-bottom: 1em;
+#job-description ul li, #job-description p {
+    padding-bottom: .5em;
     line-height: 25px;
     font-weight: 300;
 }

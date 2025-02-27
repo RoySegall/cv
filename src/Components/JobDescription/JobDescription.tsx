@@ -17,7 +17,7 @@ export function JobDescription({placeName, period, position, items, paragraph}: 
         <span className='position'>{position}</span>, <span className='place-name'>{placeName}</span>
         <span className='period'>{period.start} - {period.end}</span>
 
-        {paragraph && <>hi {paragraph}</>}
+        {paragraph && <p>{paragraph}</p>}
         {items && <ul>{items.map((item,i) => <li key={i}>{item}</li>)}</ul>}
     </div>
 }

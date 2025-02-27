@@ -2,11 +2,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 2em;
+    padding-bottom: 1em;
 }
 
 img {
-    height: 200px;
+    height: 150px;
     border-radius: 50%;
 }
 
@@ -41,6 +41,6 @@ header ul li {
 
 header p {
     font-weight: 200;
-    width: 700px;
+    width: 800px;
     line-height: 25px;
 }
