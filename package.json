@@ -7,9 +7,12 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generatePdf": "node --experimental-strip-types ./scripts/generatePdf.ts"
   },
   "dependencies": {
+    "puppeteer": "^24.3.0",
+    "puppeteer-core": "^24.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
