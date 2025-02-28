@@ -44,7 +44,7 @@ const places: JobDescriptionProps[] = [
         paragraph: <>
             Wrote kids book about my black cat. Later on this will be a side hustle dedicated to author kids books about
             cats which eventually donate half of the incomes to animals in need. The book can be purchased through a
-            dedicated site or in steimatzky – one of israel top books store
+            dedicated site or in "steimatzky" – one of israel top books store.
         </>
     },
 ]
