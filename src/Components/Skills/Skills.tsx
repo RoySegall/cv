@@ -1,15 +1,13 @@
 import "./skills.css";
 import {BlockTitle} from "../BlockTitle";
-import type {ReactNode} from "react";
+import {Fragment, ReactNode} from "react";
 import {JobDescription, JobDescriptionProps} from "../JobDescription";
 import {Spacer} from "../Spacer";
 
 function Block({title, children}: {title: string, children: ReactNode}) {
     return <div id='block'>
         <BlockTitle>{title}</BlockTitle>
-        <p>
-            {children}
-        </p>
+        {children}
     </div>
 }
 
@@ -68,10 +66,10 @@ export function Skills() {
         </Block>
 
         <Block title={'VOLUNTEERING'}>
-            {places.map((props, i) => <>
-                <JobDescription key={i} {...props} />
+            {places.map((props, i) => <Fragment key={i}>
+                <JobDescription {...props} />
                 {i < places.length - 1 && <Spacer />}
-            </>)}
+            </Fragment>)}
         </Block>
     </div>
 }

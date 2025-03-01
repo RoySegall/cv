@@ -2,6 +2,7 @@ import './experience.css';
 import {BlockTitle} from "../BlockTitle";
 import {JobDescription, JobDescriptionProps} from "../JobDescription";
 import {Spacer} from "../Spacer";
+import {Fragment} from "react";
 
 const places: JobDescriptionProps[] = [
     {
@@ -71,9 +72,9 @@ export function Experience() {
     return <div id='experience'>
         <BlockTitle>Experience</BlockTitle>
 
-        {places.map((props, i) => <>
-            <JobDescription key={i} {...props} />
+        {places.map((props, i) => <Fragment key={i}>
+            <JobDescription {...props} />
             {i < places.length - 1 && <Spacer />}
-        </>)}
+        </Fragment>)}
     </div>
 }
