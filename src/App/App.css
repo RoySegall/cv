@@ -48,3 +48,12 @@
   padding: 0;
   margin: 0;
 }
+
+.ltr {
+  direction: ltr;
+}
+
+.rtl {
+  direction: rtl;
+}
+

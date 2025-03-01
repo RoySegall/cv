@@ -5,7 +5,7 @@ import './index.css';
 import {manifest} from "../manifest.ts";
 
 export default function App() {
-    return <div className={manifest.color}>
+    return <div className={`${manifest.color} ${manifest.direction}`}>
         <Header />
 
         <div id='content'>

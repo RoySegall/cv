@@ -1,2 +1,69 @@
-# 'red' | 'orange' | 'yellow' | 'green' | 'blue' | 'pink' | 'purple';
-color: yellow
+$schema: "schema.json"
+direction: ltr
+color: purple
+information:
+  name: Roy Segall
+  position: Full Stack Developer
+  contact:
+      email: roy@segall.io
+      phone: 0546857077
+      website: https://segall.io
+  about: |
+    Enthusiastic, self-learned, highly motivated, loves to explore new technologies, contributes to open-source projects, 
+    speaks at local meetups, makes the best Tahini you can imagine, and is an amateur chef.
+
+jobs:
+  - company: Testim.io (later acquired by Tricentis)
+    position: Fullstack Developer
+    start: 2021
+    end: present
+    items:
+      - Developed features for a low-code E2E automation platform, including a Chrome extension, resolved complex 
+        customer bugs, and handled production issues.
+      - Contributed to the design of “Testim Mobile,” a product for automating E2E tests for mobile apps, which 
+        exceeded board expectations and won a significant amount of sales over competitors.
+      - Promoted Testim through blog posts and facilitated the first meetup for Tricentis Israel customers.
+
+  - company: Dreamed Diabetes
+    position: Fullstack Developer
+    start: 2019
+    end: 2021
+    items:
+      - Designed features from end-to-end, encompassing the backend, desktop application, and mobile app (iOS and Android).
+      - Contributed to an advisory system for physicians and individuals with diabetes, which enhanced the plans for automated insulin pumps for type 1 diabetes and supported the development of a groundbreaking treatment for type 2 diabetes. All solutions received FDA approval.
+      - Enhanced the development cycle and deployment processes by automating workflows and striving for full CI/CD integration within the constraints of the medical field. Reduced Selenium test run time by 2-3 minutes each by leveraging Django ORM over internal Python packages.
+
+  - company: gizra
+    position: Fullstack Developer
+    start: 2011
+    end: 2018
+    items:
+      - Collaborated with Harvard University on a product aimed at reducing maintenance costs, establishing a unified design language, and minimizing IT maintenance headaches.
+      - Played a key role in designing project architectures, writing automated end-to-end tests, and integrating these into continuous integration pipelines.
+      - Maintained Drupal modules, which had a significant impact on the community, including the White House and the EU.
+      - Organized annual Drupal community events and presented sessions at international Drupal conferences.
+languages:
+  - name: Hebrew
+    level: Native
+    rate: 5
+  - name: Hebrew
+    level: Proficient
+    rate: 4
+skills: ['NodeJS', 'JavaScript', 'Typsceipt', 'PHP', 'React', 'Swift', 'CI/CD', 'NextJS', 'Gatsby']
+volunteering:
+  - company: Hasadna
+    position: Fullstack Developer
+    start: 2014
+    end: 2021
+    paragraph: |
+      Assisted a non-profit organization focused on providing social activists and journalists with tools that used open 
+      government data. These tools aimed to enhance transparency, accountability, and informed decision-making within 
+      communities.
+  - company: Cat Tales
+    position: Owner
+    start: 2024
+    end: present
+    paragraph: |
+      Wrote kids book about my black cat. Later on this will be a side hustle dedicated to author kids books about cats 
+      which eventually donate half of the incomes to animals in need. The book can be purchased through a dedicated site 
+      or in "steimatzky" – one of israel top books store.

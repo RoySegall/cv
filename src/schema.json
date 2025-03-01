@@ -1,0 +1,82 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "properties": {
+    "direction": {
+      "type": "string",
+      "enum": ["ltr", "rtl"],
+      "description": "Text direction (left-to-right or right-to-left)."
+    },
+    "color": {
+      "type": "string",
+      "enum": ["purple", "blue", "red", "green", "orange", "black"],
+      "description": "Primary theme color."
+    },
+    "information": {
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "position": { "type": "string" },
+        "contact": {
+          "type": "object",
+          "properties": {
+            "email": { "type": "string", "format": "email" },
+            "phone": { "type": "string" },
+            "website": { "type": "string", "format": "uri" }
+          },
+          "required": ["email", "phone", "website"]
+        },
+        "about": { "type": "string" }
+      },
+      "required": ["name", "position", "contact", "about"]
+    },
+    "jobs": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company": { "type": "string" },
+          "position": { "type": "string" },
+          "start": { "type": "string" },
+          "end": { "type": "string" },
+          "items": {
+            "type": "array",
+            "items": { "type": "string" }
+          }
+        },
+        "required": ["company", "position", "start", "end", "items"]
+      }
+    },
+    "languages": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "name": { "type": "string" },
+          "level": { "type": "string" },
+          "rate": { "type": "integer", "minimum": 1, "maximum": 5 }
+        },
+        "required": ["name", "level", "rate"]
+      }
+    },
+    "skills": {
+      "type": "array",
+      "items": { "type": "string" }
+    },
+    "volunteering": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "company": { "type": "string" },
+          "position": { "type": "string" },
+          "start": { "type": "string" },
+          "end": { "type": "string" },
+          "paragraph": { "type": "string" }
+        },
+        "required": ["company", "position", "start", "end", "paragraph"]
+      }
+    }
+  },
+  "required": ["direction", "color", "information", "jobs", "languages", "skills", "volunteering"]
+}
