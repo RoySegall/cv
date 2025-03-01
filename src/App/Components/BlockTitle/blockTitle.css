@@ -1,9 +1,9 @@
 #blockTitle {
     font-size: 1.5rem;
-    border-bottom: 3px solid var(--darkPurple);
+    border-bottom: 3px solid var(--darkColor);
     width: 100%;
     display: block;
-    color: var(--darkPurple);
+    color: var(--darkColor);
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 1.25px;

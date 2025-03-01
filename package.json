@@ -8,13 +8,14 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "generatePdf": "node --experimental-strip-types ./scripts/generatePdf.ts"
+    "generatePdf": "node --experimental-strip-types ./src/generatePdf.ts"
   },
   "dependencies": {
     "puppeteer": "^24.3.0",
     "puppeteer-core": "^24.3.0",
     "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "react-dom": "^19.0.0",
+    "yaml": "^2.7.0"
   },
   "devDependencies": {
     "@eslint/js": "^9.21.0",

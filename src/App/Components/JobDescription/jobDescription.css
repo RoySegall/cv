@@ -1,13 +1,13 @@
 #job-description .position {
     font-size: 1.5rem;
     font-weight: 800;
-    color: var(--darkPurple);
+    color: var(--darkColor);
 }
 
 #job-description .place-name {
     font-size: 1rem;
     font-weight: 400;
-    color: var(--lightPurple);
+    color: var(--lightColor);
 }
 
 #job-description .period {

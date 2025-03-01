@@ -26,7 +26,7 @@
 #description .name {
     font-weight: 500;
     padding-bottom: .5em;
-    color: var(--darkPurple)
+    color: var(--darkColor)
 }
 
 #description .level {
@@ -41,7 +41,7 @@
 
 #language ul li {
     display: block;
-    background: var(--lightPurple);
+    background: var(--lightColor);
     border-radius: 50%;
     margin-right: .25em;
     height: 1.25em;

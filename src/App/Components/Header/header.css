@@ -19,14 +19,14 @@ h1 {
     padding-bottom: .1em;
     text-transform: uppercase;
     font-size: 2.5em;
-    color: var(--darkPurple);
+    color: var(--darkColor);
 }
 
 h2 {
     padding-bottom: .5em;
     font-weight: 400;
     font-size: 1.5em;
-    color: var(--lightPurple);
+    color: var(--lightColor);
 }
 
 header ul {
