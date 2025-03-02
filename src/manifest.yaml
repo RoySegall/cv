@@ -6,7 +6,7 @@ information:
   position: Full Stack Developer
   contact:
       email: roy@segall.io
-      phone: 0546857077
+      phone: "0546857077"
       website: https://segall.io
   about: |
     Enthusiastic, self-learned, highly motivated, loves to explore new technologies, contributes to open-source projects, 
@@ -15,7 +15,7 @@ information:
 jobs:
   - company: Testim.io (later acquired by Tricentis)
     position: Fullstack Developer
-    start: 2021
+    start: "2021"
     end: present
     items:
       - Developed features for a low-code E2E automation platform, including a Chrome extension, resolved complex 
@@ -26,8 +26,8 @@ jobs:
 
   - company: Dreamed Diabetes
     position: Fullstack Developer
-    start: 2019
-    end: 2021
+    start: "2019"
+    end: "2021"
     items:
       - Designed features from end-to-end, encompassing the backend, desktop application, and mobile app (iOS and Android).
       - Contributed to an advisory system for physicians and individuals with diabetes, which enhanced the plans for automated insulin pumps for type 1 diabetes and supported the development of a groundbreaking treatment for type 2 diabetes. All solutions received FDA approval.
@@ -35,8 +35,8 @@ jobs:
 
   - company: gizra
     position: Fullstack Developer
-    start: 2011
-    end: 2018
+    start: "2011"
+    end: "2018"
     items:
       - Collaborated with Harvard University on a product aimed at reducing maintenance costs, establishing a unified design language, and minimizing IT maintenance headaches.
       - Played a key role in designing project architectures, writing automated end-to-end tests, and integrating these into continuous integration pipelines.
@@ -53,15 +53,15 @@ skills: ['NodeJS', 'JavaScript', 'Typsceipt', 'PHP', 'React', 'Swift', 'CI/CD', 
 volunteering:
   - company: Hasadna
     position: Fullstack Developer
-    start: 2014
-    end: 2021
+    start: "2014"
+    end: "2021"
     paragraph: |
       Assisted a non-profit organization focused on providing social activists and journalists with tools that used open 
       government data. These tools aimed to enhance transparency, accountability, and informed decision-making within 
       communities.
   - company: Cat Tales
     position: Owner
-    start: 2024
+    start: "2024"
     end: present
     paragraph: |
       Wrote kids book about my black cat. Later on this will be a side hustle dedicated to author kids books about cats 
