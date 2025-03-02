@@ -1,13 +1,29 @@
 import puppeteer, {Browser} from "puppeteer";
 import {resolve} from "path";
-import {unlink} from "node:fs/promises";
+import {unlink, readFile} from "node:fs/promises";
+import yaml from "yaml";
+import {zodSchema} from "./zodSchema.ts";
 
 let browser: Browser;
 async function generatePdf() {
-    console.log('starting to open the browser');
-    const filePath = resolve(process.cwd(), 'output', 'cv.pdf');
+    const manifestContent = await readFile(resolve(process.cwd(), 'src', 'manifest.yaml'), 'utf-8');
+    const yamlContent = yaml.parse(manifestContent);
 
-    await unlink(filePath);
+    const parsedSchema = zodSchema.safeParse(yamlContent);
+
+    if (!parsedSchema.success) {
+        console.error(parsedSchema.error)
+        throw new Error('There are some issues with the schema. Look at the console log.')
+    }
+
+    console.log('starting to open the browser');
+    const filePath = resolve(process.cwd(), 'output', parsedSchema.data.cvFilename);
+
+    try {
+        await unlink(filePath);
+    } catch {
+        // Do nothing.
+    }
 
     browser = await puppeteer.launch();
     const page = await browser.newPage();

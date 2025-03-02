@@ -1,54 +1,11 @@
 import manifestFile from '../manifest.yaml?raw';
 import yaml from 'yaml';
 import z from 'zod';
+import {zodSchema} from "../zodSchema.ts";
 
 let manifest: unknown;
 
-export const zodSchema = z.object({
-    direction: z.enum(["ltr", "rtl"]),
-    color: z.enum(["purple", "blue", "red", "green", "orange", "black"]),
-    template: z.enum(["TwoLayout"]).default("TwoLayout"),
-    information: z.object({
-        avatar: z.string(),
-        name: z.string(),
-        position: z.string(),
-        contact: z.object({
-            email: z.string().email(),
-            phone: z.string(),
-            website: z.string().url(),
-        }),
-        about: z.string(),
-    }),
-    jobs: z.array(
-        z.object({
-            company: z.string(),
-            position: z.string(),
-            start: z.string(),
-            end: z.string(),
-            items: z.array(z.string()),
-        })
-    ),
-    languages: z.array(
-        z.object({
-            name: z.string(),
-            level: z.string(),
-            rate: z.number().int().min(1).max(5),
-        })
-    ),
-    skills: z.array(z.string()),
-    volunteering: z.array(
-        z.object({
-            company: z.string(),
-            position: z.string(),
-            start: z.string(),
-            end: z.string(),
-            paragraph: z.string(),
-        })
-    ),
-});
-
 export type Manifest = z.infer<typeof zodSchema>;
-
 export function getManifest(): Manifest {
     if (!manifest) {
         manifest = yaml.parse(manifestFile);

@@ -7,6 +7,10 @@
       "enum": ["ltr", "rtl"],
       "description": "Text direction (left-to-right or right-to-left)."
     },
+    "cvFilename": {
+      "type": "string",
+      "description": "The filename of the generated CV."
+    },
     "color": {
       "type": "string",
       "enum": ["purple", "blue", "red", "green", "orange", "black"],

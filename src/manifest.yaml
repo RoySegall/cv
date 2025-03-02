@@ -1,10 +1,13 @@
 # Taking the schema from the repo. If you want to test the validation with the local schema change it to "schema.json".
 $schema: "https://raw.githubusercontent.com/RoySegall/cv/refs/heads/master/src/schema.json"
-# Need to work on ltr support.
-direction: ltr
-# More in the future.
-template: TwoLayout
+
+# General section.
+cvFilename: 'Roy Segall CV - 02-2025.pdf'
+direction: ltr # tdb: Support for ltr.
+template: TwoLayout # tdb: Support for more templates.
 color: purple
+
+# Personal information.
 information:
   avatar: "/Users/roysegall/projects/react-cv/public/avatar.jpg"
   name: Roy Segall
@@ -17,6 +20,7 @@ information:
     Enthusiastic, self-learned, highly motivated, loves to explore new technologies, contributes to open-source projects, 
     speaks at local meetups, makes the best Tahini you can imagine, and is an amateur chef.
 
+# Your jobs.
 jobs:
   - company: Testim.io (later acquired by Tricentis)
     position: Fullstack Developer
@@ -56,6 +60,7 @@ jobs:
         EU.
       - Organized annual Drupal community events and presented sessions at international Drupal conferences.
 
+# Languages.
 languages:
   - name: Hebrew
     level: Native
@@ -64,7 +69,10 @@ languages:
     level: Proficient
     rate: 4
 
+# Tech skills.
 skills: ['Node.js', 'JavaScript', 'TypeScript', 'PHP', 'React', 'React Native', 'Swift', 'CI/CD', 'Next.js', 'Gatsby']
+
+# Volunteering section - open source and other stuff.
 volunteering:
   - company: Hasadna
     position: Fullstack Developer
