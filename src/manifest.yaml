@@ -64,7 +64,7 @@ languages:
     level: Proficient
     rate: 4
 
-skills: ['Node.js', 'JavaScript', 'TypeScript', 'PHP', 'React', 'Swift', 'CI/CD', 'Next.js', 'Gatsby']
+skills: ['Node.js', 'JavaScript', 'TypeScript', 'PHP', 'React', 'React Native', 'Swift', 'CI/CD', 'Next.js', 'Gatsby']
 volunteering:
   - company: Hasadna
     position: Fullstack Developer
