@@ -7,6 +7,7 @@ let manifest: unknown;
 export const zodSchema = z.object({
     direction: z.enum(["ltr", "rtl"]),
     color: z.enum(["purple", "blue", "red", "green", "orange", "black"]),
+    template: z.enum(["TwoLayout"]).default("TwoLayout"),
     information: z.object({
         avatar: z.string(),
         name: z.string(),

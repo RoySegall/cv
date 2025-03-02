@@ -12,6 +12,11 @@
       "enum": ["purple", "blue", "red", "green", "orange", "black"],
       "description": "Primary theme color."
     },
+    "layout": {
+      "type": "string",
+      "enum": ["TwoLayout"],
+      "description": "The layout of the CV."
+    },
     "information": {
       "type": "object",
       "properties": {
