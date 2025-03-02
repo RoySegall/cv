@@ -65,7 +65,7 @@ languages:
   - name: Hebrew
     level: Native
     rate: 5
-  - name: Hebrew
+  - name: English
     level: Proficient
     rate: 4
 
@@ -86,8 +86,8 @@ volunteering:
   - company: Cat Tales
     position: Owner
     start: "2024"
-    end: present
+    end: "present"
     paragraph: |
-      Wrote kids book about my black cat. Later on this will be a side hustle dedicated to author kids books about cats 
-      which eventually donate half of the incomes to animals in need. The book can be purchased through a dedicated site 
-      or in "steimatzky" – one of israel top books store.
+      Wrote a children's book about my black cat. Later on, this will be a side hustle dedicated to authoring 
+      children's books that will eventually donate half of the income to animals in need. The book can be purchased 
+      through a dedicated site or in "Steimatzky" – one of Israel’s top bookstores.
