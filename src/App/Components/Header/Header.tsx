@@ -3,22 +3,22 @@ import avatar from './avatar.jpg';
 import phone from '../../assets/phone.svg';
 import email from '../../assets/email.svg';
 import link from '../../assets/link.svg';
+import {getManifest} from "../../manifest.ts";
 
 export function Header() {
+    const manifest = getManifest();
+
     return <header>
         <div id='description'>
-            <h1>Roy Segall</h1>
-            <h2>Full Stack Developer</h2>
+            <h1>{manifest.information.name}</h1>
+            <h2>{manifest.information.position}</h2>
             <ul>
-                <li><img src={phone} /> 0546857077</li>
-                <li><img src={email} /> roy@segall.io</li>
-                <li><img src={link}/> www.segall.io</li>
+                <li><img src={phone} /> {manifest.information.contact.phone}</li>
+                <li><img src={email} /> {manifest.information.contact.email}</li>
+                <li><img src={link}/> {manifest.information.contact.website}</li>
             </ul>
 
-            <p>
-                Enthusiastic, self-learned, highly motivated, loves to explore new technologies, contributes to open-source
-                projects, speaks at local meetups, makes the best Tahini you can imagine, and is an amateur chef.
-            </p>
+            <p>{manifest.information.about}</p>
         </div>
 
         <img src={avatar} className='avatar' alt="avatar"/>

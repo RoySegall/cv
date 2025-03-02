@@ -13,10 +13,6 @@
     justify-content: flex-end;
 }
 
-#block {
-    padding-bottom: 1.5em;
-}
-
 #language {
     display: flex;
     justify-content: space-between;

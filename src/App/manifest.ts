@@ -1,8 +1,8 @@
 import manifestFile from '../manifest.yaml?raw';
 import yaml from 'yaml';
 import z from 'zod';
-
 let manifest: unknown;
+
 
 export const zodSchema = z.object({
     direction: z.enum(["ltr", "rtl"]),
@@ -45,7 +45,9 @@ export const zodSchema = z.object({
     ),
 });
 
-export function getManifest() {
+export type Manifest = z.infer<typeof zodSchema>;
+
+export function getManifest(): Manifest {
     if (!manifest) {
         manifest = yaml.parse(manifestFile);
     }
