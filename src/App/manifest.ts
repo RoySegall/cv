@@ -1,13 +1,14 @@
 import manifestFile from '../manifest.yaml?raw';
 import yaml from 'yaml';
 import z from 'zod';
-let manifest: unknown;
 
+let manifest: unknown;
 
 export const zodSchema = z.object({
     direction: z.enum(["ltr", "rtl"]),
     color: z.enum(["purple", "blue", "red", "green", "orange", "black"]),
     information: z.object({
+        avatar: z.string(),
         name: z.string(),
         position: z.string(),
         contact: z.object({

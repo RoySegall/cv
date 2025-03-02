@@ -2,6 +2,7 @@ $schema: "schema.json"
 direction: ltr
 color: purple
 information:
+  avatar: "/Users/roysegall/projects/react-cv/public/avatar.jpg"
   name: Roy Segall
   position: Full Stack Developer
   contact:

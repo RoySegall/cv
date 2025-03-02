@@ -15,6 +15,7 @@
     "information": {
       "type": "object",
       "properties": {
+        "avatar": { "type": "string" },
         "name": { "type": "string" },
         "position": { "type": "string" },
         "contact": {

@@ -11,6 +11,16 @@
     align-items: flex-end;
 }
 
+#language #description .name {
+    font-weight: 500;
+    padding-bottom: .5em;
+    color: var(--darkColor);
+}
+
+#language #description .level {
+    font-weight: 100;
+}
+
 #language ul {
     display: flex;
     list-style-type: none;

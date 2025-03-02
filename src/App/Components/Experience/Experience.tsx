@@ -1,19 +1,14 @@
 import './experience.css';
 import {BlockTitle} from "../BlockTitle";
 import {JobDescription} from "../JobDescription";
-import {Spacer} from "../Spacer";
-import {Fragment} from "react";
 import {getManifest} from "../../manifest.ts";
+import {ItemsWithSpacer} from "../ItemsWithSpacer/ItemsWithSpacer.tsx";
 
 export function Experience() {
     const manifest = getManifest();
 
     return <div id='experience'>
         <BlockTitle>Experience</BlockTitle>
-
-        {manifest.jobs.map((props, i) => <Fragment key={i}>
-            <JobDescription {...props} />
-            {i < manifest.jobs.length - 1 && <Spacer />}
-        </Fragment>)}
+        <ItemsWithSpacer items={manifest.jobs} component={JobDescription} />
     </div>
 }

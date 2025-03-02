@@ -1,0 +1,11 @@
+#technologies {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#technologies span {
+    border-bottom: solid 1px black;
+    padding-bottom: .5em;
+    font-weight: 500;
+}

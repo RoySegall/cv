@@ -5,25 +5,3 @@
     padding-left: 5%;
     justify-content: flex-end;
 }
-
-#description .name {
-    font-weight: 500;
-    padding-bottom: .5em;
-    color: var(--darkColor);
-}
-
-#description .level {
-    font-weight: 100;
-}
-
-#technologies {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-}
-
-#technologies span {
-    border-bottom: solid 1px black;
-    padding-bottom: .5em;
-    font-weight: 500;
-}

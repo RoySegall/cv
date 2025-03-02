@@ -1,12 +1,19 @@
 import './header.css';
-import avatar from './avatar.jpg';
 import phone from '../../assets/phone.svg';
 import email from '../../assets/email.svg';
 import link from '../../assets/link.svg';
 import {getManifest} from "../../manifest.ts";
+import {useEffect, useState} from "react";
 
 export function Header() {
     const manifest = getManifest();
+    const [avatar, setAvatar] = useState<string|undefined>(undefined);
+
+    useEffect(() => {
+        import(manifest.information.avatar).then((_avatar) => {
+            setAvatar(_avatar.default);
+        });
+    });
 
     return <header>
         <div id='description'>
@@ -21,6 +28,6 @@ export function Header() {
             <p>{manifest.information.about}</p>
         </div>
 
-        <img src={avatar} className='avatar' alt="avatar"/>
+        {avatar && <img src={avatar} className='avatar' alt="avatar"/>}
     </header>
 }
