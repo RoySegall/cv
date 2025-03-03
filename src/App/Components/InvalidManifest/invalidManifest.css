@@ -1,0 +1,36 @@
+#invalid-manifest {
+    display: flex;
+    justify-content: center;
+    padding: 3em 0;
+}
+
+#invalid-manifest .content {
+    border: solid 1px #fcfcfc;
+    border-top: 3px solid #ff8181;
+    width: 80%;
+    box-shadow: 0px 3px 7px 3px rgba(0, 0, 0, 0.1);;
+}
+
+#invalid-manifest .content .top {
+    background: #f4f4f4;
+    padding: 1em;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 2px;
+    text-align: center;
+    display: block;
+}
+
+#invalid-manifest .content .errors {
+    padding: 1em;
+}
+
+#invalid-manifest .content .errors ul {
+    padding-top: 1em;
+    list-style-position: inside;
+}
+
+#invalid-manifest .content .errors ul li {
+    line-height: 30px;
+    font-weight: 300;
+}

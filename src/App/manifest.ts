@@ -6,6 +6,15 @@ import {zodSchema} from "../zodSchema.ts";
 let manifest: unknown;
 
 export type Manifest = z.infer<typeof zodSchema>;
+export class InvalidManifestError extends Error {
+    zodIssues: z.ZodIssue[];
+
+    constructor(zodIssues: z.ZodIssue[]) {
+        super('Invalid manifest file');
+        this.zodIssues = zodIssues;
+    }
+}
+
 export function getManifest(): Manifest {
     if (!manifest) {
         manifest = yaml.parse(manifestFile);
@@ -14,8 +23,7 @@ export function getManifest(): Manifest {
     const parsedSchema = zodSchema.safeParse(manifest);
 
     if (!parsedSchema.success) {
-        console.error(parsedSchema.error)
-        throw new Error('There are some issues with the schema. Look at the console log.')
+        throw new InvalidManifestError(parsedSchema.error.errors);
     }
 
     return parsedSchema.data;
