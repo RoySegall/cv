@@ -3,6 +3,7 @@ import {resolve} from "path";
 import {unlink, readFile} from "node:fs/promises";
 import yaml from "yaml";
 import {zodSchema} from "./zodSchema.ts";
+import fs from "fs-extra";
 
 let browser: Browser;
 async function generatePdf() {
@@ -19,10 +20,11 @@ async function generatePdf() {
     console.log('starting to open the browser');
     const filePath = resolve(process.cwd(), 'output', parsedSchema.data.cvFilename);
 
-    try {
+    const fileExists = await fs.pathExists(filePath);
+
+    if (fileExists) {
+        // Delete the current file so we'll have a fresh one.
         await unlink(filePath);
-    } catch {
-        // Do nothing.
     }
 
     browser = await puppeteer.launch();
