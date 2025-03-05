@@ -12,6 +12,7 @@
   "dependencies": {
     "dotenv": "^16.4.7",
     "fs-extra": "^11.3.0",
+    "openai": "^4.86.1",
     "prompts": "^2.4.2",
     "puppeteer": "^24.3.0",
     "puppeteer-core": "^24.3.0",
