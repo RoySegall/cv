@@ -1,33 +1,40 @@
 import puppeteer, {Browser} from "puppeteer";
 import {resolve} from "path";
-import {readFileSync, unlink, pathExists} from "fs-extra";
-import {handleManifest} from "./ManifestUtils.ts";
+import { exec } from "node:child_process";
+import fs from "fs-extra";
+import {processManifest} from "./assitant/utils.ts";
 
 let browser: Browser;
+let viteProcess: ReturnType<typeof exec>;
+
+function startVite() {
+    return new Promise((resolve) => {
+        viteProcess = exec("npm run dev");
+        setTimeout(() => {
+            resolve(null);
+        });
+    });
+}
+
 async function generatePdf() {
-    const manifestContent = readFileSync(resolve(process.cwd(), 'src', 'manifest.yaml'), 'utf-8');
-    const parsedManifest = handleManifest(manifestContent);
+    const result = processManifest();
 
-    if (!parsedManifest.success) {
-        console.error(parsedManifest.error);
-        throw new Error('There are some issues with the schema. Look at the console log.');
+    if (!result) {
+        return;
     }
 
-    console.log('starting to open the browser');
-    const filePath = resolve(process.cwd(), 'output', parsedManifest.data.cvFilename);
+    await startVite();
+    console.log('Preparing your new PDF CV file');
 
-    const fileExists = await pathExists(filePath);
-
-    if (fileExists) {
-        // Delete the current file so we'll have a fresh one.
-        await unlink(filePath);
-    }
+    const filePath = resolve(process.cwd(), 'output', result.cvFilename);
+    await fs.pathExists(filePath).then(() => fs.unlink(filePath));
 
     browser = await puppeteer.launch();
+
     const page = await browser.newPage();
 
-    await page.goto('http://localhost:5173/',  { waitUntil: 'networkidle2' });
-
+    await page.goto('http://localhost:3000/',  { waitUntil: 'networkidle2' });
+    await page.waitForSelector('header', {timeout: 1_000});
     await page.pdf({
         path: filePath,
         format: 'A4',
@@ -35,7 +42,7 @@ async function generatePdf() {
         margin: { top: '10mm', right: '10mm', bottom: '10mm', left: '10mm' } // שוליים מותאמים
     });
 
-    console.log('done');
+    console.log('closed. Good day sir!');
 }
 
 generatePdf()
@@ -43,7 +50,6 @@ generatePdf()
         console.error('There are some errors:', e)
     })
     .finally(async () => {
-        console.log('starting to close the browser');
-        await browser.close()
-        console.log('closed. Good day sir!');
+        browser?.close();
+        viteProcess?.kill();
     })
