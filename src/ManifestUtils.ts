@@ -1,6 +1,9 @@
 import z from "zod";
+import yaml from "yaml";
 
-export const zodSchema = z.object({
+let manifest: unknown;
+
+const schemaUtils = z.object({
     direction: z.enum(["ltr", "rtl"]),
     color: z.enum(["purple", "blue", "red", "green", "orange", "black"]),
     template: z.enum(["TwoLayout"]).default("TwoLayout"),
@@ -43,3 +46,11 @@ export const zodSchema = z.object({
         })
     ),
 });
+
+export function handleManifest(manifestContent: string) {
+    if (!manifest) {
+        manifest = yaml.parse(manifestContent);
+    }
+
+    return schemaUtils.safeParse(manifest);
+}

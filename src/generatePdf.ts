@@ -1,26 +1,22 @@
 import puppeteer, {Browser} from "puppeteer";
 import {resolve} from "path";
-import {unlink, readFile} from "node:fs/promises";
-import yaml from "yaml";
-import {zodSchema} from "./zodSchema.ts";
-import fs from "fs-extra";
+import {readFileSync, unlink, pathExists} from "fs-extra";
+import {handleManifest} from "./ManifestUtils.ts";
 
 let browser: Browser;
 async function generatePdf() {
-    const manifestContent = await readFile(resolve(process.cwd(), 'src', 'manifest.yaml'), 'utf-8');
-    const yamlContent = yaml.parse(manifestContent);
+    const manifestContent = readFileSync(resolve(process.cwd(), 'src', 'manifest.yaml'), 'utf-8');
+    const parsedManifest = handleManifest(manifestContent);
 
-    const parsedSchema = zodSchema.safeParse(yamlContent);
-
-    if (!parsedSchema.success) {
-        console.error(parsedSchema.error)
-        throw new Error('There are some issues with the schema. Look at the console log.')
+    if (!parsedManifest.success) {
+        console.error(parsedManifest.error);
+        throw new Error('There are some issues with the schema. Look at the console log.');
     }
 
     console.log('starting to open the browser');
-    const filePath = resolve(process.cwd(), 'output', parsedSchema.data.cvFilename);
+    const filePath = resolve(process.cwd(), 'output', parsedManifest.data.cvFilename);
 
-    const fileExists = await fs.pathExists(filePath);
+    const fileExists = await pathExists(filePath);
 
     if (fileExists) {
         // Delete the current file so we'll have a fresh one.

@@ -1,37 +1,34 @@
-import path from 'path';
-import prompts from 'prompts';
-import { setUpEnv } from './assitant/setUpEnv';
-import { reviewCV } from './assitant/reviewCV';
-import { adjustCVToLinkedin } from './assitant/adjustCVToLinkedin.ts';
-
-type ActionType = 'setUpEnv' | 'reviewCV' | 'adjustCVToLinkedin';
-
-export const filesPath = {
-    manifest: path.resolve('./manifest.yaml'),
-    env: path.resolve('../.env'),
-};
-
-const actions: Record<ActionType, () => Promise<void>> = {
-    setUpEnv,
-    reviewCV,
-    adjustCVToLinkedin,
-};
+import {verifyAiIsReady} from './assitant/verifyAiIsReady.ts';
+import {reviewCV} from './assitant/reviewCV.ts';
+import {adjustCVToLinkedin} from "./assitant/adjustCVToLinkedin.ts";
+import {updatePdf} from "./assitant/updatePdf.ts";
+import {processManifest, yesNoQuestion} from "./assitant/utils.ts";
 
 const runWorkflow = async (): Promise<void> => {
-    const answers = await prompts({
-        type: 'select',
-        name: 'action',
-        message: 'What would you like to do?',
-        choices: [
-            { title: 'Set up environment', value: 'setUpEnv' },
-            { title: 'Review your CV', value: 'reviewCV' },
-            { title: 'Adjust CV to LinkedIn', value: 'adjustCVToLinkedin' },
-        ],
-        initial: 0
-    });
+    await verifyAiIsReady();
 
-    const action = answers.action as ActionType;
-    await actions[action]();
+    const originalManifest = processManifest();
+
+    await reviewCV(originalManifest);
+
+    const applyChanges = await yesNoQuestion('Do you want to apply the changes to the file?');
+
+    if (!applyChanges) {
+        console.log('Reverting the changes');
+        return;
+    }
+
+    const adjustToLinkedin = await yesNoQuestion('Do you want to adjust the CV to a LinkedIn job posting?');
+
+    if (adjustToLinkedin) {
+        await adjustCVToLinkedin();
+    }
+
+    const shouldUpdatePDF = await yesNoQuestion('Would you like to generate a PDF?');
+
+    if (shouldUpdatePDF) {
+        await updatePdf();
+    }
 };
 
 runWorkflow()

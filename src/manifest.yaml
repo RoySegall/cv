@@ -17,8 +17,8 @@ information:
       phone: "0546857077"
       website: https://segall.io
   about: |
-    Enthusiastic, self-learned, highly motivated, loves to explore new technologies, contributes to open-source projects, 
-    speaks at local meetups, makes the best Tahini you can imagine, and is an amateur chef.
+    An enthusiastic self-learner with high motivation, passionate about exploring new technologies, contributes to open 
+    source project when can, enjoys speaking at local meetups, excels in making the best Tahini, and has a soulf of s foodie.
 
 # Your jobs.
 jobs:
@@ -65,12 +65,12 @@ languages:
   - name: Hebrew
     level: Native
     rate: 5
-  - name: English
+  - name: Hebrew
     level: Proficient
     rate: 4
 
 # Tech skills.
-skills: ['Node.js', 'JavaScript', 'TypeScript', 'PHP', 'React', 'React Native', 'Swift', 'CI/CD', 'Next.js', 'Gatsby']
+skills: ['Node.js', 'javascript', 'TypeScript', 'PHP', 'React', 'React Native', 'Swift', 'CI/CD', 'Next.js', 'Gatsby']
 
 # Volunteering section - open source and other stuff.
 volunteering:

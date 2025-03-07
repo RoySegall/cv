@@ -1,11 +1,9 @@
 import manifestFile from '../manifest.yaml?raw';
-import yaml from 'yaml';
 import z from 'zod';
-import {zodSchema} from "../zodSchema.ts";
+import {handleManifest} from "../ManifestUtils.ts";
 
-let manifest: unknown;
+export type Manifest = ReturnType<typeof getManifest>;
 
-export type Manifest = z.infer<typeof zodSchema>;
 export class InvalidManifestError extends Error {
     zodIssues: z.ZodIssue[];
 
@@ -15,16 +13,12 @@ export class InvalidManifestError extends Error {
     }
 }
 
-export function getManifest(): Manifest {
-    if (!manifest) {
-        manifest = yaml.parse(manifestFile);
+export function getManifest() {
+    const parsedManifest = handleManifest(manifestFile);
+
+    if (!parsedManifest.success) {
+        throw new InvalidManifestError(parsedManifest.error.errors);
     }
 
-    const parsedSchema = zodSchema.safeParse(manifest);
-
-    if (!parsedSchema.success) {
-        throw new InvalidManifestError(parsedSchema.error.errors);
-    }
-
-    return parsedSchema.data;
+    return parsedManifest.data;
 }

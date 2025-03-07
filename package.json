@@ -10,8 +10,8 @@
     "assitant": "node --experimental-strip-types ./src/assitant.ts"
   },
   "dependencies": {
-    "dotenv": "^16.4.7",
     "fs-extra": "^11.3.0",
+    "ollama": "^0.5.14",
     "openai": "^4.86.1",
     "prompts": "^2.4.2",
     "puppeteer": "^24.3.0",
