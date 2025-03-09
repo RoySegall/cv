@@ -1,12 +1,16 @@
 import {verifyAiIsReady} from './assitant/verifyAiIsReady.ts';
 import {reviewCV} from './assitant/reviewCV.ts';
 import {updatePdf} from "./assitant/updatePdf.ts";
-import {manifestFilePath, processManifest, yesNoQuestion} from "./assitant/utils.ts";
+import {type ExecReturnType, manifestFilePath, processManifest, startVite, yesNoQuestion} from "./assitant/utils.ts";
 import fsExtra from "fs-extra";
 import yaml from "yaml";
 
+let viteProcess: ExecReturnType;
+
 const runWorkflow = async (): Promise<void> => {
     await verifyAiIsReady();
+
+    viteProcess = await startVite();
 
     const originalManifest = processManifest()!;
     const reviewResult = await reviewCV(originalManifest);
@@ -28,7 +32,11 @@ const runWorkflow = async (): Promise<void> => {
     if (shouldUpdatePDF) {
         await updatePdf();
     }
+
 };
 
 runWorkflow()
-    .catch(e => console.error('❌ Workflow error:', e));
+    .catch(e => console.error('❌ Workflow error:', e))
+    .finally(() => {
+        viteProcess.kill();
+    });

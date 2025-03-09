@@ -12,7 +12,7 @@ type LlamaResponse = {
 
 export async function reviewAbout(text: string): Promise<LlamaResponse> {
     const content = `
-    Take the next sentence and review it as if you were a human. Provide a final version of the sentence and some insights. Provide the result in a json format with the next structure:
+    Take the next sentence and fix any grammar issues and wr. Provide a final version of the sentence from first person pov and some insights. Provide the result in a json format with the next structure:
     {
         "original": "original sentence",
         "reviewed": "final version of the sentence",

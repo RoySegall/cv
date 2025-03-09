@@ -10,12 +10,10 @@ information:
     email: roy@segall.io
     phone: "0546857077"
     website: https://segall.io
-  about: >
-    anenthusiastic self-learner with high motivation, passionate about exploring
-    new technologies, contributes to open 
-
-    source project when can, enjoys speaking at local meetups, excels in making
-    the best Tahini, and has a soulf of s foodie.
+  about: An enthusiastic self-learner with high motivation, passionate about
+    exploring new technologies, contributes to open source projects when
+    possible, enjoys speaking at local meetups, excels in making the best
+    tahini, and has a soul of a foodie.
 jobs:
   - company: Testim.io (later acquired by Tricentis)
     position: Fullstack Developer

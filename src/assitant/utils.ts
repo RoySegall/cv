@@ -2,6 +2,9 @@ import path from "path";
 import prompts from "prompts";
 import fs from "fs-extra";
 import {handleManifest} from "../ManifestUtils.ts";
+import {exec} from "node:child_process";
+
+export type ExecReturnType = ReturnType<typeof exec>;
 
 export const manifestFilePath = path.resolve(process.cwd(), 'src', 'manifest.yaml');
 
@@ -35,4 +38,14 @@ export function processManifest() {
     }
 
     return parsedManifest.data;
+}
+
+export async function startVite(): Promise<ExecReturnType> {
+    return new Promise((resolve) => {
+        const viteProcess = exec("npm run dev", () => {});
+
+        setTimeout(() => {
+            resolve(viteProcess);
+        }, 3_000);
+    });
 }

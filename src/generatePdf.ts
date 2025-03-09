@@ -1,33 +1,23 @@
 import puppeteer, {Browser} from "puppeteer";
 import {resolve} from "path";
-import { exec } from "node:child_process";
 import fs from "fs-extra";
-import {processManifest} from "./assitant/utils.ts";
+import {type ExecReturnType, processManifest, startVite} from "./assitant/utils.ts";
 
 let browser: Browser;
-let viteProcess: ReturnType<typeof exec>;
+let viteProcess: ExecReturnType;
 
-function startVite() {
-    return new Promise((resolve) => {
-        viteProcess = exec("npm run dev");
-        setTimeout(() => {
-            resolve(null);
-        });
-    });
-}
-
-async function generatePdf() {
+export async function generatePdf() {
     const result = processManifest();
 
     if (!result) {
         return;
     }
 
-    await startVite();
+    viteProcess = await startVite();
     console.log('Preparing your new PDF CV file');
 
     const filePath = resolve(process.cwd(), 'output', result.cvFilename);
-    await fs.pathExists(filePath).then(() => fs.unlink(filePath));
+    await fs.pathExists(filePath).then(() => fs.unlink(filePath)).catch(() => {});
 
     browser = await puppeteer.launch();
 
