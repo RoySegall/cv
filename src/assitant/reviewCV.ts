@@ -35,6 +35,8 @@ export async function reviewAbout(text: string): Promise<LlamaResponse> {
 }
 
 export async function reviewCV(manifest: ReturnType<typeof processManifest>) {
+
+    // what to check: Check the languages, check the skills, check the experience and return the insights.
     const [reviewedAbout] = await Promise.all([
         reviewAbout(manifest!.information.about),
     ]);
