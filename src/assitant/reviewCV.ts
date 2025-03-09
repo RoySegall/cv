@@ -11,9 +11,8 @@ type LlamaResponse = {
 }
 
 export async function reviewAbout(text: string): Promise<LlamaResponse> {
-    // todo: limit it to number amount of words. check which one.
     const content = `
-    Take the next sentence and review it as if you were a human. Provide a final version of the sentence with a limit of 35 words and some insights. Provide the result in a json format with the next structure:
+    Take the next sentence and review it as if you were a human. Provide a final version of the sentence and some insights. Provide the result in a json format with the next structure:
     {
         "original": "original sentence",
         "reviewed": "final version of the sentence",
