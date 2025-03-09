@@ -1,27 +1,26 @@
 import {verifyAiIsReady} from './assitant/verifyAiIsReady.ts';
 import {reviewCV} from './assitant/reviewCV.ts';
-import {adjustCVToLinkedin} from "./assitant/adjustCVToLinkedin.ts";
 import {updatePdf} from "./assitant/updatePdf.ts";
-import {processManifest, yesNoQuestion} from "./assitant/utils.ts";
+import {manifestFilePath, processManifest, yesNoQuestion} from "./assitant/utils.ts";
+import fsExtra from "fs-extra";
+import yaml from "yaml";
 
 const runWorkflow = async (): Promise<void> => {
     await verifyAiIsReady();
 
-    const originalManifest = processManifest();
+    const originalManifest = processManifest()!;
+    const reviewResult = await reviewCV(originalManifest);
 
-    await reviewCV(originalManifest);
+    const reviewsManifest = {...originalManifest, information: {...originalManifest.information, about: reviewResult.reviewedAbout.reviewed}};
 
-    const applyChanges = await yesNoQuestion('Do you want to apply the changes to the file?');
+    fsExtra.writeFileSync(manifestFilePath, yaml.stringify(reviewsManifest));
+
+    const applyChanges = await yesNoQuestion('Do you want to apply the changes to the file? You might need to refresh the page to see the changes');
 
     if (!applyChanges) {
         console.log('Reverting the changes');
+        fsExtra.writeFileSync(manifestFilePath, yaml.stringify(originalManifest));
         return;
-    }
-
-    const adjustToLinkedin = await yesNoQuestion('Do you want to adjust the CV to a LinkedIn job posting?');
-
-    if (adjustToLinkedin) {
-        await adjustCVToLinkedin();
     }
 
     const shouldUpdatePDF = await yesNoQuestion('Would you like to generate a PDF?');

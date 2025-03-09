@@ -7,19 +7,22 @@ const role = 'user';
 type LlamaResponse = {
     original: string;
     reviewed: string;
+    insights: string;
 }
 
-async function reviewAbout(about: string): Promise<LlamaResponse> {
+export async function reviewAbout(text: string): Promise<LlamaResponse> {
+    // todo: limit it to number amount of words. check which one.
     const content = `
-    Take the next sentence and review it as if you were a human. Provide a final version of the sentence. Provide the result in a json format with the next structure:
+    Take the next sentence and review it as if you were a human. Provide a final version of the sentence with a limit of 35 words and some insights. Provide the result in a json format with the next structure:
     {
         "original": "original sentence",
-        "reviewed": "final version of the sentence"
+        "reviewed": "final version of the sentence",
+        "insights": "the insights you have about the sentence"
     }
 
 ---
-### 📄 **CV Text to Review:**
-    ${about}
+### 📄 **Text to Review:**
+    ${text}
 ---
 `;
     const response = await ollama.chat({
@@ -36,5 +39,6 @@ export async function reviewCV(manifest: ReturnType<typeof processManifest>) {
     const [reviewedAbout] = await Promise.all([
         reviewAbout(manifest!.information.about),
     ]);
-    console.table(reviewedAbout.reviewed);
+
+    return {reviewedAbout}
 }

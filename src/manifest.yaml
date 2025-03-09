@@ -1,66 +1,65 @@
-# Taking the schema from the repo. If you want to test the validation with the local schema change it to "schema.json".
-$schema: "https://raw.githubusercontent.com/RoySegall/cv/refs/heads/master/src/schema.json"
-
-# General section.
-cvFilename: 'Roy Segall CV - 02-2025.pdf'
-direction: ltr # tdb: Support for ltr.
-template: TwoLayout # tdb: Support for more templates.
+direction: ltr
 color: purple
-
-# Personal information.
+template: TwoLayout
+cvFilename: Roy Segall CV - 02-2025.pdf
 information:
-  avatar: "/Users/roysegall/projects/react-cv/public/avatar.jpg"
+  avatar: /Users/roysegall/projects/react-cv/public/avatar.jpg
   name: Roy Segall
   position: Full Stack Developer
   contact:
-      email: roy@segall.io
-      phone: "0546857077"
-      website: https://segall.io
-  about: |
-    anenthusiastic self-learner with high motivation, passionate about exploring new technologies, contributes to open 
-    source project when can, enjoys speaking at local meetups, excels in making the best Tahini, and has a soulf of s foodie.
+    email: roy@segall.io
+    phone: "0546857077"
+    website: https://segall.io
+  about: >
+    anenthusiastic self-learner with high motivation, passionate about exploring
+    new technologies, contributes to open 
 
-# Your jobs.
+    source project when can, enjoys speaking at local meetups, excels in making
+    the best Tahini, and has a soulf of s foodie.
 jobs:
   - company: Testim.io (later acquired by Tricentis)
     position: Fullstack Developer
     start: "2021"
     end: present
     items:
-      - Developed features for a low-code E2E automation platform, including a Chrome extension, resolved complex 
-        customer bugs, and handled production issues.
-      - Contributed to the design of “Testim Mobile,” a product for automating E2E tests for mobile apps, which 
-        exceeded board expectations and won a significant amount of sales over competitors.
-      - Promoted Testim through blog posts and facilitated the first meetup for Tricentis Israel customers.
-
+      - Developed features for a low-code E2E automation platform, including a
+        Chrome extension, resolved complex customer bugs, and handled production
+        issues.
+      - Contributed to the design of “Testim Mobile,” a product for automating
+        E2E tests for mobile apps, which exceeded board expectations and won a
+        significant amount of sales over competitors.
+      - Promoted Testim through blog posts and facilitated the first meetup for
+        Tricentis Israel customers.
   - company: Dreamed Diabetes
     position: Fullstack Developer
     start: "2019"
     end: "2021"
     items:
-      - Designed features from end-to-end, encompassing the backend, desktop application, and mobile app 
-        (iOS and Android).
-      - Contributed to an advisory system for physicians and individuals with diabetes, which enhanced the plans for 
-        automated insulin pumps for type 1 diabetes and supported the development of a groundbreaking treatment for 
-        type 2 diabetes. All solutions received FDA approval.
-      - Enhanced the development cycle and deployment processes by automating workflows and striving for full CI/CD 
-        integration within the constraints of the medical field. Reduced Selenium test run time by 2-3 minutes each by 
-        leveraging Django ORM over internal Python packages.
-
+      - Designed features from end-to-end, encompassing the backend, desktop
+        application, and mobile app (iOS and Android).
+      - Contributed to an advisory system for physicians and individuals with
+        diabetes, which enhanced the plans for automated insulin pumps for type
+        1 diabetes and supported the development of a groundbreaking treatment
+        for type 2 diabetes. All solutions received FDA approval.
+      - Enhanced the development cycle and deployment processes by automating
+        workflows and striving for full CI/CD integration within the constraints
+        of the medical field. Reduced Selenium test run time by 2-3 minutes each
+        by leveraging Django ORM over internal Python packages.
   - company: gizra
     position: Fullstack Developer
     start: "2011"
     end: "2018"
     items:
-      - Collaborated with Harvard University on a product aimed at reducing maintenance costs, establishing a unified 
-        design language, and minimizing IT maintenance headaches.
-      - Played a key role in designing project architectures, writing automated end-to-end tests, and integrating these 
-        into continuous integration pipelines.
-      - Maintained Drupal modules, which had a significant impact on the community, including the White House and the 
-        EU.
-      - Organized annual Drupal community events and presented sessions at international Drupal conferences.
-
-# Languages.
+      - Collaborated with Harvard University on a product aimed at reducing
+        maintenance costs, establishing a unified design language, and
+        minimizing IT maintenance headaches.
+      - Played a key role in designing project architectures, writing automated
+        end-to-end tests, and integrating these into continuous integration
+        pipelines.
+      - Maintained Drupal modules, which had a significant impact on the
+        community, including the White House and the EU.
+      - Organized annual Drupal community events and presented sessions at
+        international Drupal conferences.
 languages:
   - name: Hebrew
     level: Native
@@ -68,26 +67,40 @@ languages:
   - name: Hebrew
     level: Proficient
     rate: 4
-
-# Tech skills.
-skills: ['Node.js', 'javascript', 'TypeScript', 'PHP', 'React', 'React Native', 'Swift', 'CI/CD', 'Next.js', 'Gatsby']
-
-# Volunteering section - open source and other stuff.
+skills:
+  - Node.js
+  - javascript
+  - TypeScript
+  - PHP
+  - React
+  - React Native
+  - Swift
+  - CI/CD
+  - Next.js
+  - Gatsby
 volunteering:
   - company: Hasadna
     position: Fullstack Developer
     start: "2014"
     end: "2021"
-    paragraph: |
-      Assisted a non-profit organization focused on providing social activists and journalists with tools that used open 
-      government data. These tools aimed to enhance transparency, accountability, and informed decision-making within 
-      communities.
+    paragraph: >
+      Assisted a non-profit organization focused on providing social activists
+      and journalists with tools that used open 
 
+      government data. These tools aimed to enhance transparency,
+      accountability, and informed decision-making within 
+
+      communities.
   - company: Cat Tales
     position: Owner
     start: "2024"
-    end: "present"
-    paragraph: |
-      Wrote a children's book about my black cat. Later on, this will be a side hustle dedicated to authoring 
-      children's books that will eventually donate half of the income to animals in need. The book can be purchased 
-      through a dedicated site or in "Steimatzky" – one of Israel’s top bookstores.
+    end: present
+    paragraph: >
+      Wrote a children's book about my black cat. Later on, this will be a side
+      hustle dedicated to authoring 
+
+      children's books that will eventually donate half of the income to animals
+      in need. The book can be purchased 
+
+      through a dedicated site or in "Steimatzky" – one of Israel’s top
+      bookstores.

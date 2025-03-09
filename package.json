@@ -7,7 +7,8 @@
     "dev": "vite",
     "lint": "eslint .",
     "generatePdf": "node --experimental-strip-types ./src/generatePdf.ts",
-    "assitant": "node --experimental-strip-types ./src/assitant.ts"
+    "assitant": "node --experimental-strip-types ./src/assitant.ts",
+    "playgroud": "node --watch --experimental-strip-types ./src/playgroud.ts"
   },
   "dependencies": {
     "fs-extra": "^11.3.0",
