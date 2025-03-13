@@ -15,28 +15,28 @@
 }
 
 .orange {
-  --lightColor: hsl(30, 71%, 43%);
-  --darkColor: hsl(30, 44%, 23%);
+  --lightColor: hsl(35, 90%, 50%);
+  --darkColor: hsl(35, 60%, 30%);
 }
 
 .yellow {
-  --lightColor: hsl(62, 71%, 43%);
-  --darkColor: hsl(62, 44%, 23%);
+  --lightColor: hsl(45, 90%, 50%);
+  --darkColor: hsl(45, 80%, 35%);
 }
 
 .green {
-  --lightColor: hsl(100, 71%, 43%);
-  --darkColor: hsl(100, 44%, 23%);
+  --lightColor: hsl(130, 71%, 43%);
+  --darkColor: hsl(130, 44%, 23%);
 }
 
 .blue {
-  --lightColor: hsl(210, 71%, 43%);
-  --darkColor: hsl(210, 44%, 23%);
+  --lightColor: hsl(220, 71%, 43%);
+  --darkColor: hsl(220, 44%, 23%);
 }
 
 .pink {
-  --lightColor: hsl(330, 71%, 43%);
-  --darkColor: hsl(330, 44%, 23%);
+  --lightColor: hsl(320, 71%, 43%);
+  --darkColor: hsl(320, 44%, 23%);
 }
 
 .purple {

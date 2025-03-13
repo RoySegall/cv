@@ -3,6 +3,11 @@ import {getManifest, InvalidManifestError, Manifest} from "../../manifest.ts";
 import {ReactNode} from "react";
 import {InvalidManifest} from "../InvalidManifest";
 
+const LayoutWrapper = ({children}: {children: ReactNode}) => {
+    const manifest = getManifest();
+    return <div className={`${manifest.color} ${manifest.direction}`}>{children}</div>;
+}
+
 export const TemplateRouter = () => {
     let template: Manifest['template'];
 
@@ -18,9 +23,9 @@ export const TemplateRouter = () => {
     };
 
     if (template in templates) {
-        return templates[template];
+        return <LayoutWrapper>{templates[template]}</LayoutWrapper>;
     }
 
     // Default to TwoLayout.
-    return <TwoLayout />;
+    return <LayoutWrapper><TwoLayout /></LayoutWrapper>;
 }

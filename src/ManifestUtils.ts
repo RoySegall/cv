@@ -5,7 +5,7 @@ let manifest: unknown;
 
 const schemaUtils = z.object({
     direction: z.enum(["ltr", "rtl"]),
-    color: z.enum(["purple", "blue", "red", "green", "orange", "black"]),
+    color: z.enum(["purple", "blue", "red", "green", "orange", "black", "pink", "yellow"]),
     template: z.enum(["TwoLayout"]).default("TwoLayout"),
     cvFilename: z.string().default("cv.pdf"),
     information: z.object({

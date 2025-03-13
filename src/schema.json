@@ -13,7 +13,7 @@
     },
     "color": {
       "type": "string",
-      "enum": ["purple", "blue", "red", "green", "orange", "black"],
+      "enum": ["purple", "blue", "red", "green", "orange", "black", "pink", "yellow"],
       "description": "Primary theme color."
     },
     "layout": {
