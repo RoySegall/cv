@@ -1,5 +1,5 @@
 direction: ltr
-color: yellow
+color: blue
 template: TwoLayout
 cvFilename: Roy Segall CV - 02-2025.pdf
 information:
@@ -10,10 +10,9 @@ information:
     email: roy@segall.io
     phone: "0546857077"
     website: https://segall.io
-  about: I am an enthusiastic self-learner with high motivation, passionate about
-    exploring new technologies. I contribute to open source projects when
-    possible and enjoy speaking at local meetups. I also have a soul of a
-    foodie.
+  about: I am a highly motivated self-learner with a passion for exploring new technologies. I actively contribute to 
+   open-source projects and enjoy speaking at local meetups. Beyond tech, I have a deep love for food and culinary 
+   experiences.
 jobs:
   - company: Testim.io (later acquired by Tricentis)
     position: Fullstack Developer
