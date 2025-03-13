@@ -16,7 +16,6 @@ export async function reviewAbout(text: string): Promise<LlamaResponse> {
     {
         "original": "original sentence",
         "reviewed": "final version of the sentence",
-        "insights": "the insights you have about the sentence"
     }
 
 ---

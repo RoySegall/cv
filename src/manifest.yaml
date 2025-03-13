@@ -12,8 +12,7 @@ information:
     website: https://segall.io
   about: An enthusiastic self-learner with high motivation, passionate about
     exploring new technologies, contributes to open source projects when
-    possible, enjoys speaking at local meetups, excels in making the best
-    tahini, and has a soul of a foodie.
+    possible, enjoys speaking at local meetups, and has a soul of a foodie.
 jobs:
   - company: Testim.io (later acquired by Tricentis)
     position: Fullstack Developer
@@ -67,11 +66,15 @@ languages:
     rate: 4
 skills:
   - Node.js
-  - javascript
+  - JavaScript
   - TypeScript
   - PHP
   - React
   - React Native
+  - MySQL
+  - MongoDB
+  - Apache Kafka
+  - Python
   - Swift
   - CI/CD
   - Next.js
