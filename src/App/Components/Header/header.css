@@ -41,7 +41,8 @@ header ul li {
     align-items: center;
 }
 
-header ul li img {
+header ul li span {
+    color: var(--lightColor);
     height: 1em;
     padding-right: .25em;
 }

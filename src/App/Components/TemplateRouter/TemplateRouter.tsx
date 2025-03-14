@@ -1,7 +1,7 @@
 import {TwoLayout} from "../../Templates/TwoLayout";
 import {getManifest, InvalidManifestError, Manifest} from "../../manifest.ts";
-import {ReactNode} from "react";
 import {InvalidManifest} from "../InvalidManifest";
+import type {ReactNode} from "react";
 
 const LayoutWrapper = ({children}: {children: ReactNode}) => {
     const manifest = getManifest();
@@ -22,10 +22,5 @@ export const TemplateRouter = () => {
         'TwoLayout': <TwoLayout />,
     };
 
-    if (template in templates) {
-        return <LayoutWrapper>{templates[template]}</LayoutWrapper>;
-    }
-
-    // Default to TwoLayout.
-    return <LayoutWrapper><TwoLayout /></LayoutWrapper>;
+    return <LayoutWrapper>{templates[template]}</LayoutWrapper>;
 }
