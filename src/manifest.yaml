@@ -1,7 +1,7 @@
 direction: ltr
-color: blue
+color: orange
 template: TwoLayout
-cvFilename: Roy Segall CV - 02-2025.pdf
+cvFilename: Roy Segall CV - 02-2026.pdf
 information:
   avatar: /Users/roysegall/projects/react-cv/public/avatar.jpg
   name: Roy Segall
@@ -10,53 +10,51 @@ information:
     email: roy@segall.io
     phone: "0546857077"
     website: https://segall.io
-  about: I am a highly motivated self-learner with a passion for exploring new technologies. I actively contribute to 
-   open-source projects and enjoy speaking at local meetups. Beyond tech, I have a deep love for food and culinary 
-   experiences.
+  about: >
+      I am a self-taught developer with a passion for UI/UX precision and a 
+      drive for clean, intuitive design. I thrive on tackling complex 
+      challenges, exploring emerging technologies, and sharing my journey 
+      through blog posts. When I’m away from the screen, I’m usually in the 
+      kitchen exploring new flavors and culinary techniques.
 jobs:
+  - company: Nsoft + Q.ai
+    position: Fullstack Developer
+    start: "2025"
+    end: present
+    items:
+      - Spearheaded JS/React mentorship and rigorous code reviews to ensure UI/UX excellence across distributed global 
+        teams.
+      - Engineered Electron-based data acquisition tools used to train core algorithms, supporting the team through 
+        Q.ai's acquisition by Apple.
   - company: Testim.io (later acquired by Tricentis)
     position: Fullstack Developer
     start: "2021"
-    end: present
+    end: "2025"
     items:
-      - Developed features for a low-code E2E automation platform, including a
-        Chrome extension, resolved complex customer bugs, and handled production
-        issues.
-      - Contributed to the design of “Testim Mobile,” a product for automating
-        E2E tests for mobile apps, which exceeded board expectations and won a
-        significant amount of sales over competitors.
-      - Promoted Testim through blog posts and facilitated the first meetup for
-        Tricentis Israel customers.
+      - Developed core features and a Chrome extension for a low-code E2E automation platform, managing production 
+        stability and complex technical support.
+      - Architected "Testim Mobile," a competitive E2E automation product that exceeded board KPIs and secured key 
+        market wins over industry rivals.
+      - Drove brand growth through technical blogging and established the inaugural Tricentis Israel customer community.
   - company: Dreamed Diabetes
     position: Fullstack Developer
     start: "2019"
     end: "2021"
     items:
-      - Designed features from end-to-end, encompassing the backend, desktop
-        application, and mobile app (iOS and Android).
-      - Contributed to an advisory system for physicians and individuals with
-        diabetes, which enhanced the plans for automated insulin pumps for type
-        1 diabetes and supported the development of a groundbreaking treatment
-        for type 2 diabetes. All solutions received FDA approval.
-      - Enhanced the development cycle and deployment processes by automating
-        workflows and striving for full CI/CD integration within the constraints
-        of the medical field. Reduced Selenium test run time by 2-3 minutes each
-        by leveraging Django ORM over internal Python packages.
+      - Led end-to-end design and development for backend, desktop, and cross-platform mobile applications (iOS/Android).
+      - Developed FDA-approved advisory systems for Type 1 and Type 2 diabetes, optimizing automated insulin pump logic 
+        and treatment protocols.
+      - Streamlined medical-grade CI/CD workflows and optimized Selenium test suites via Django ORM, reducing execution 
+        time per run.
   - company: gizra
     position: Fullstack Developer
     start: "2011"
     end: "2018"
     items:
-      - Collaborated with Harvard University on a product aimed at reducing
-        maintenance costs, establishing a unified design language, and
-        minimizing IT maintenance headaches.
-      - Played a key role in designing project architectures, writing automated
-        end-to-end tests, and integrating these into continuous integration
-        pipelines.
-      - Maintained Drupal modules, which had a significant impact on the
-        community, including the White House and the EU.
-      - Organized annual Drupal community events and presented sessions at
-        international Drupal conferences.
+      - Partnered with Harvard University to architect a unified design system and CI/CD pipelines, significantly 
+        reducing IT overhead and maintenance costs.
+      - Directed annual events, managed the local community, and published technical blogs while maintaining Drupal 
+        modules for the White House, EU, and international conferences.
 languages:
   - name: Hebrew
     level: Native
