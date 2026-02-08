@@ -62,6 +62,7 @@ languages:
   - name: Hebrew
     level: Proficient
     rate: 4
+# add support for multi groups.
 skills:
   - Node.js
   - JavaScript
@@ -103,13 +104,15 @@ volunteering:
 
       through a dedicated site or in "Steimatzky" – one of Israel’s top
       bookstores.
-
+  # Add support for multi lines.
   - company: Open source
     position: Contributor
     start: "2011"
     end: "2018"
     paragraph: >
       Contriubted to open source projects, main for the Drupal community. Main module are: Organic group, the message 
-      stack, RESTful module, and the entity validator module - All had major impact on the community and was a must have module for Drupal 7 site.
+      stack, RESTful module, and the entity validator module - All had major impact on the community and was a must have 
+      module for Drupal 7 site.
       
-      Manged to local community, wrote blog posts, orcehestrated local drupal events, mentored you Drupal developres and held technichal sessoins.
+      Manged to local community, wrote blog posts, orcehestrated local drupal events, mentored you Drupal developres and 
+      held technichal sessoins.
