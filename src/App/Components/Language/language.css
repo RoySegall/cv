@@ -5,37 +5,19 @@
     }
 }
 
-#language {
+#languages {
     display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-}
+    gap: 5px;
 
-#language #description .name {
-    font-weight: 500;
-    padding-bottom: .5em;
-    color: var(--darkColor);
-}
+    span {
+        &.name {
+            color: var(--darkColor);
+            font-weight: 400;
+        }
 
-#language #description .level {
-    font-weight: 100;
-}
-
-#language ul {
-    display: flex;
-    list-style-type: none;
-    padding-bottom: .75em;
-}
-
-#language ul li {
-    display: block;
-    background: var(--lightColor);
-    border-radius: 50%;
-    margin-right: .25em;
-    height: 1.25em;
-    padding-right: 1em;
-}
-
-#language ul li.off {
-    background: var(--gray);
+        &.level {
+            color: var(--lightColor);
+            font-weight: 100;
+        }
+    }
 }

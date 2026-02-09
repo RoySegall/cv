@@ -1,15 +1,13 @@
 import "./language.css";
-import type { Manifest } from "../../manifest.ts";
+import {getManifest} from "../../manifest.ts";
 
-export function Language({name, level, rate}: Manifest['languages'][0]) {
-    return <div id='language'>
-        <div id='description'>
-            <span className='name'>{name}</span>
-            <span className='level'>{level}</span>
-        </div>
+export function Languages() {
+    const manifest = getManifest();
 
-        <ul>
-            {Array.from({length: 5}).map((_, i) => <li key={i} className={i + 1 > rate ? 'off' : ''}>&nbsp;</li>)}
-        </ul>
+    return <div id='languages'>
+        {manifest.languages.map((language, index) => <div className='language' key={language.name}>
+            <span className='name'>{language.name}</span> <span className='level'>({language.level})</span>
+            {index !== manifest.languages.length - 1 && <>,</>}
+        </div>)}
     </div>
 }

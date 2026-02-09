@@ -16,7 +16,7 @@ jobs:
   - company: Nsoft + Q.ai
     position: Fullstack Developer
     start: "2025"
-    end: present
+    end: Present
     items:
       - Led JS/React mentorship and performed detailed code reviews to maintain high UI/UX standards across global teams.
       - Collaborated with distributed developers to ensure consistent design quality and clean code practices.
@@ -36,7 +36,7 @@ jobs:
     end: "2021"
     items:
       - Developed FDA-approved systems for Type 1/2 diabetes, optimizing insulin pump logic and treatment protocols accessible via web and mobile apps.
-      - Improved CI/CD workflows and optimized Selenium test sui1tes via Django ORM, reducing execution 
+      - Improved CI/CD workflows and optimized Selenium test suites via Django ORM, reducing execution 
         time per run.
   - company: gizra
     position: Fullstack Developer
@@ -50,31 +50,31 @@ languages:
   - name: Hebrew
     level: Native
     rate: 5
-  - name: Hebrew
+  - name: English
     level: Proficient
     rate: 4
 
 skills:
   Frontend:
-    - React
-    - Next.js
-    - Electron
-    - CSS
-    - SASS
-    - Swift
+    - React,
+    - Next.js,
+    - Electron,
+    - CSS,
+    - SASS,
+    - Swift,
     - React Native
   Backend:
-    - Node.js
-    - Python
-    - Laravel
-    - Drupal
-    - MySQL
+    - Node.js,
+    - Python,
+    - Laravel,
+    - Drupal,
+    - MySQL,
     - MongoDB
-  Languages/Tools:
-    - CI/CD
-    - Playwright
-    - Typescript
-    - ESLint
+  DevOps/Tools:
+    - CI/CD,
+    - Playwright,
+    - TypeScript,
+    - ESLint,
     - Vitest
 volunteering:
   - company: Hasadna
@@ -86,6 +86,6 @@ volunteering:
   - company: Cat Tales
     position: Owner
     start: "2024"
-    end: present
+    end: Present
     paragraph: >
       Authored a children's book about my cat, with half of all proceeds donated to animal rescue. Available via a dedicated site and at Steimatzky, Israel’s leading bookstore.

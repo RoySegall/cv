@@ -15,14 +15,17 @@ export function Header() {
     return <header>
         <div id='description'>
             <h1>{manifest.information.name}</h1>
-            <h2>{manifest.information.position}</h2>
-            <ul>
-                <li><span className="material-symbols-outlined">call</span> {manifest.information.contact.phone}</li>
-                <li><span className="material-symbols-outlined">mail</span> {manifest.information.contact.email}</li>
-                <li><span className="material-symbols-outlined">link</span> {manifest.information.contact.website}</li>
-            </ul>
+            <div className='contact'>
+                <h2>{manifest.information.position}</h2>
 
-            <p>{manifest.information.about}</p>
+                <ul>
+                    <li><span className="material-symbols-outlined">call</span> {manifest.information.contact.phone}</li>
+                    <li><span className="material-symbols-outlined">mail</span> {manifest.information.contact.email}</li>
+                    <li><span className="material-symbols-outlined">link</span> {manifest.information.contact.website}</li>
+                </ul>
+            </div>
+
+            <p className='about'>{manifest.information.about}</p>
         </div>
 
         {avatar && <img src={avatar} className='avatar' alt="avatar"/>}

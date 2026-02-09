@@ -31,12 +31,12 @@ h2 {
 
 header ul {
     display: flex;
+    gap: .75em;
     list-style-type: none;
     padding-bottom: .75em;
 }
 
 header ul li {
-    padding-right: 2em;
     display: flex;
     align-items: center;
 }
@@ -51,4 +51,9 @@ header p {
     font-weight: 200;
     width: 800px;
     line-height: 25px;
+}
+
+.contact {
+    display: flex;
+    gap: 2.25em;
 }
