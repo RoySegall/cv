@@ -17,6 +17,7 @@ export function getManifest() {
     const parsedManifest = handleManifest(manifestFile);
 
     if (!parsedManifest.success) {
+        console.log(parsedManifest.error);
         throw new InvalidManifestError(parsedManifest.error.errors);
     }
 

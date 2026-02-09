@@ -35,7 +35,10 @@ const schemaUtils = z.object({
             rate: z.number().int().min(1).max(5),
         })
     ),
-    skills: z.array(z.string()),
+    skills: z.union([
+        z.array(z.string()),
+        z.record(z.string(), z.array(z.string()))
+    ]),
     volunteering: z.array(
         z.object({
             company: z.string(),

@@ -1,5 +1,5 @@
 direction: ltr
-color: orange
+color: purple
 template: TwoLayout
 cvFilename: Roy Segall CV - 02-2026.pdf
 information:
@@ -11,21 +11,16 @@ information:
     phone: "0546857077"
     website: https://segall.io
   about: >
-      I am a self-taught developer with a passion for UI/UX precision and a 
-      drive for clean, intuitive design. I thrive on tackling complex 
-      challenges, exploring emerging technologies, and sharing my journey 
-      through blog posts. When I’m away from the screen, I’m usually in the 
-      kitchen exploring new flavors and culinary techniques.
+    Self-taught developer driven by UI/UX precision and clean design. I thrive on tackling complex challenges and sharing my journey through technical writing , balanced by a passion for culinary exploration.
 jobs:
   - company: Nsoft + Q.ai
     position: Fullstack Developer
     start: "2025"
     end: present
     items:
-      - Spearheaded JS/React mentorship and rigorous code reviews to ensure UI/UX excellence across distributed global 
-        teams.
-      - Engineered Electron-based data acquisition tools used to train core algorithms, supporting the team through 
-        Q.ai's acquisition by Apple.
+      - Led JS/React mentorship and performed detailed code reviews to maintain high UI/UX standards across global teams.
+      - Collaborated with distributed developers to ensure consistent design quality and clean code practices.
+      - Built internal platforms including Electron data tools and React apps with live video streams. This ecosystem powered the core algorithms and platform value leading up to the acquisition by Apple.
   - company: Testim.io (later acquired by Tricentis)
     position: Fullstack Developer
     start: "2021"
@@ -33,18 +28,15 @@ jobs:
     items:
       - Developed core features and a Chrome extension for a low-code E2E automation platform, managing production 
         stability and complex technical support.
-      - Architected "Testim Mobile," a competitive E2E automation product that exceeded board KPIs and secured key 
-        market wins over industry rivals.
+      - Built core features for "Testim Mobile" translating complex architecture into a high-performance E2E product. These contributions directly secured enterprise sales and market wins over industry rivals.
       - Drove brand growth through technical blogging and established the inaugural Tricentis Israel customer community.
   - company: Dreamed Diabetes
     position: Fullstack Developer
     start: "2019"
     end: "2021"
     items:
-      - Led end-to-end design and development for backend, desktop, and cross-platform mobile applications (iOS/Android).
-      - Developed FDA-approved advisory systems for Type 1 and Type 2 diabetes, optimizing automated insulin pump logic 
-        and treatment protocols.
-      - Streamlined medical-grade CI/CD workflows and optimized Selenium test suites via Django ORM, reducing execution 
+      - Developed FDA-approved systems for Type 1/2 diabetes, optimizing insulin pump logic and treatment protocols accessible via web and mobile apps.
+      - Improved CI/CD workflows and optimized Selenium test sui1tes via Django ORM, reducing execution 
         time per run.
   - company: gizra
     position: Fullstack Developer
@@ -53,8 +45,7 @@ jobs:
     items:
       - Partnered with Harvard University to architect a unified design system and CI/CD pipelines, significantly 
         reducing IT overhead and maintenance costs.
-      - Directed annual events, managed the local community, and published technical blogs while maintaining Drupal 
-        modules for the White House, EU, and international conferences.
+      - Maintained open-source Drupal modules used globally, while directing the local community through technical blogging and orchestrating developer events.
 languages:
   - name: Hebrew
     level: Native
@@ -62,57 +53,39 @@ languages:
   - name: Hebrew
     level: Proficient
     rate: 4
-# add support for multi groups.
+
 skills:
-  - Node.js
-  - JavaScript
-  - TypeScript
-  - PHP
-  - React
-  - React Native
-  - MySQL
-  - MongoDB
-  - Apache Kafka
-  - Python
-  - Swift
-  - CI/CD
-  - Next.js
-  - Gatsby
+  Frontend:
+    - React
+    - Next.js
+    - Electron
+    - CSS
+    - SASS
+    - Swift
+    - React Native
+  Backend:
+    - Node.js
+    - Python
+    - Laravel
+    - Drupal
+    - MySQL
+    - MongoDB
+  Languages/Tools:
+    - CI/CD
+    - Playwright
+    - Typescript
+    - ESLint
+    - Vitest
 volunteering:
   - company: Hasadna
     position: Fullstack Developer
     start: "2014"
     end: "2021"
     paragraph: >
-      Assisted a non-profit organization focused on providing social activists
-      and journalists with tools that used open 
-
-      government data. These tools aimed to enhance transparency,
-      accountability, and informed decision-making within 
-
-      communities.
+      Built open-data tools for a non-profit to enhanced transparency and support social activists and journalists.
   - company: Cat Tales
     position: Owner
     start: "2024"
     end: present
     paragraph: >
-      Wrote a children's book about my black cat. Later on, this will be a side
-      hustle dedicated to authoring 
-
-      children's books that will eventually donate half of the income to animals
-      in need. The book can be purchased 
-
-      through a dedicated site or in "Steimatzky" – one of Israel’s top
-      bookstores.
-  # Add support for multi lines.
-  - company: Open source
-    position: Contributor
-    start: "2011"
-    end: "2018"
-    paragraph: >
-      Contriubted to open source projects, main for the Drupal community. Main module are: Organic group, the message 
-      stack, RESTful module, and the entity validator module - All had major impact on the community and was a must have 
-      module for Drupal 7 site.
-      
-      Manged to local community, wrote blog posts, orcehestrated local drupal events, mentored you Drupal developres and 
-      held technichal sessoins.
+      Authored a children's book about my cat, with half of all proceeds donated to animal rescue. Available via a dedicated site and at Steimatzky, Israel’s leading bookstore.
