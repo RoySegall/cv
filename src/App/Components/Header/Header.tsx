@@ -19,9 +19,9 @@ export function Header() {
                 <h2>{manifest.information.position}</h2>
 
                 <ul>
-                    <li><span className="material-symbols-outlined">call</span> {manifest.information.contact.phone}</li>
-                    <li><span className="material-symbols-outlined">mail</span> {manifest.information.contact.email}</li>
-                    <li><span className="material-symbols-outlined">link</span> {manifest.information.contact.website}</li>
+                    <li>{manifest.information.contact.phone} |</li>
+                    <li>{manifest.information.contact.email} |</li>
+                    <li>{manifest.information.contact.website}</li>
                 </ul>
             </div>
 

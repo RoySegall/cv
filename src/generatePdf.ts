@@ -34,7 +34,8 @@ export async function generatePdf() {
         path: filePath,
         format: 'A4',
         printBackground: true,
-        margin: { top: '8mm', right: '8mm', bottom: '8mm', left: '8mm' },
+        preferCSSPageSize: true,
+        margin: { top: '10mm', right: '5mm', bottom: '10mm', left: '5mm' }
     });
 
     const pdfDoc = await pdfLib.PDFDocument.load(pdfFileBuffer);

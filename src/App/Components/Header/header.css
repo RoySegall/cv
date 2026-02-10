@@ -13,6 +13,10 @@ header {
 #description {
     display: flex;
     flex-direction: column;
+
+    @media print {
+        padding-right: 10em;
+    }
 }
 
 h1 {
@@ -51,9 +55,22 @@ header p {
     font-weight: 200;
     width: 800px;
     line-height: 25px;
+
+    @media print {
+        width: 700px;
+    }
 }
 
 .contact {
     display: flex;
     gap: 2.25em;
+
+    @media print {
+        justify-content: space-between;
+
+        ul {
+            color: var(--lightColor);
+            padding-right: 20px;
+        }
+    }
 }
