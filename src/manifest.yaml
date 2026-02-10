@@ -11,14 +11,14 @@ information:
     phone: "0546857077"
     website: https://segall.io
   about: >
-    Self-taught developer with 15 years of experience building high-impact systems with a focus on engineering precision and UI/UX excellence. I am a dedicated technical advocate through blogging and public speaking—and an avid explorer of the culinary arts.
+    Self-taught developer with 15 years of experience building high-impact systems with a focus on engineering precision and UI/UX excellence. I am a dedicated technical advocate through blogging and public speaking.
 jobs:
   - company: Nsoft + Q.ai
     position: Fullstack Developer
     start: "2025"
     end: Present
     items:
-      - Led JS/React mentorship and performed detailed code reviews to maintain high UI/UX standards across global teams.
+      - Led JS/React mentorship and code reviews to maintain high UI/UX standards. Improved system accessibility and interface design to simplify complex data interactions for end-users.
       - Collaborated with distributed developers to ensure consistent design quality and clean code practices.
       - Built internal platforms including Electron data tools and React apps with live video streams. This ecosystem powered the core algorithms and platform value leading up to the acquisition by Apple.
   - company: Testim.io (later acquired by Tricentis)
@@ -36,15 +36,13 @@ jobs:
     end: "2021"
     items:
       - Developed FDA-approved systems for Type 1/2 diabetes, optimizing insulin pump logic and treatment protocols accessible via web and mobile apps.
-      - Improved CI/CD workflows and optimized Selenium test suites via Django ORM, reducing execution 
-        time per run.
+      - Improved CI/CD workflows and optimized Selenium test suites via Django ORM, reducing 3-5 minutes per execution.
   - company: gizra
     position: Fullstack Developer
     start: "2011"
     end: "2018"
     items:
-      - Partnered with Harvard University to architect a unified design system and CI/CD pipelines, significantly 
-        reducing IT overhead and maintenance costs.
+      - Partnered with Harvard University to architect a unified design system and CI/CD pipelines, significantly reducing IT overhead, maintenance costs, and deployment cycles.
       - Maintained open-source Drupal modules used globally, while directing the local community through technical blogging and orchestrating developer events.
 languages:
   - name: Hebrew
