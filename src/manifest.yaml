@@ -12,31 +12,32 @@ information:
     website: https://segall.io
   about: >
     Product-focused Full-Stack Developer with 15 years of experience turning complex systems into reliable products. 
-    Careful by nature, I value correctness and verification in every engineering decision. Known for high UI/UX 
-    sensitivity and improving developer adoption.
+    Specializing in AI-native workflows and high-reliability systems, I value correctness and verification in every engineering decision. 
+    Known for high UI/UX sensitivity and improving developer adoption through internal tooling.
 jobs:
   - company: Nsoft + Q.ai
     position: Fullstack Developer
     start: "2025"
     end: Present
     items:
-      - Mentored JavaScript/React developers and performed code reviews to maintain high UI/UX and code‑quality standards.
-      - Built internal platforms (Electron tools, Mobile app, React apps with live video streams) supporting core algorithms and product workflows.
+      - Architected internal platforms and back-office tools for core algorithms, featuring custom linters and automated test suites to ensure high reliability and developer adoption.
+      - Mentored JavaScript/React developers and performed code reviews to maintain high UI/UX and code-quality standards.
       - Improved accessibility and interface clarity, simplifying interaction with complex data for end users.
   - company: Testim.io (later acquired by Tricentis)
     position: Fullstack Developer
     start: "2021"
     end: "2025"
     items:
-      - Built and owned core features in a low‑code E2E automation platform, focusing on reliability, stability, and real‑world usability for developers.
-      - Developed and maintained a complex Chrome extension and production features, addressing flaky behavior and hard‑to‑reproduce failures.
-      - Helped translate a complex internal architecture into Testim Mobile, improving adoption and enterprise confidence; also led technical blogging and founded the Tricentis Israel developer community.
+      - Built and owned core features in a low-code E2E automation platform, focusing on reliability, stability, and real-world usability for developers.
+      - Developed and maintained a complex Chrome extension and production features, addressing flaky behavior and hard-to-reproduce failures.
+      - Helped translate a complex internal architecture into Testim Mobile, improving adoption and enterprise confidence.
+      - Led technical blogging and founded the Tricentis Israel developer community.
   - company: Dreamed Diabetes
     position: Fullstack Developer
     start: "2019"
     end: "2021"
     items:
-      - Developed FDA‑approved systems for diabetes management, including insulin‑pump logic and treatment protocols across web and mobile.
+      - Developed FDA-approved systems for diabetes management, including insulin-pump logic and treatment protocols across web and mobile.
       - Improved CI/CD workflows and optimized Selenium test suites via Django ORM, reducing execution time by 3–5 minutes per run.
   - company: gizra
     position: Fullstack Developer
@@ -44,7 +45,7 @@ jobs:
     end: "2018"
     items:
       - Partnered with Harvard University to architect a unified design system and CI/CD pipelines, reducing maintenance overhead and deployment cycles.
-      - Maintained widely used open‑source Drupal modules and led local developer community initiatives.
+      - Maintained widely used open-source Drupal modules and led local developer community initiatives.
 languages:
   - name: Hebrew
     level: Native
@@ -52,38 +53,42 @@ languages:
   - name: English
     level: Proficient
     rate: 4
-
 skills:
+  Applied AI:
+    - LLM Integration (Claude, Gemini)
+    - Prompt Engineering
+    - Multimodal AI Workflows
   Frontend:
-    - React,
-    - Next.js,
-    - Electron,
-    - CSS/SASS,
-    - React Native,
+    - React
+    - Next.js
+    - Electron
+    - CSS/SASS
+    - React Native
     - Swift
   Backend:
-    - Node.js,
-    - Python,
-    - Laravel,
-    - Drupal,
-    - MySQL,
+    - Node.js
+    - Python
+    - Laravel
+    - Drupal
+    - MySQL
     - MongoDB
   "Dev & Quality":
-    - TypeScript,
-    - CI/CD,
-    - Playwright,
-    - ESLint,
+    - TypeScript
+    - CI/CD
+    - Playwright
+    - ESLint
     - Vitest
+    - AWS
 volunteering:
-  - company: Hasadna
-    position: Fullstack Developer
-    start: "2014"
-    end: "2021"
+  - company: IBS Non-Profit (Israel)
+    position: Lead AI Developer
+    start: "2025"
+    end: Present
     paragraph: >
-      Built open‑data tools improving transparency for activists and journalists.
+      Developing an AI-native tool using Claude and Gemini (Multimodal) to analyze and deconstruct food ingredients from images to assist people with dietary restrictions.
   - company: Cat Tales
     position: Owner
     start: "2024"
     end: Present
     paragraph: >
-      Authored a children’s book; 50% of proceeds donated to animal rescue. Available online and at Steimatzky.
+      Authored a children’s book; 50% of proceeds donated to animal rescue.
