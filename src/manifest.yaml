@@ -1,7 +1,7 @@
 direction: ltr
-color: purple
+color: green
 template: TwoLayout
-cvFilename: Roy Segall CV - 02-2026.pdf
+cvFilename: Roy Segall CV - Clover Security Senior Frontend Engineer.pdf
 information:
   avatar: /Users/roysegall/projects/react-cv/public/avatar.jpg
   name: Roy Segall
@@ -11,41 +11,41 @@ information:
     phone: "0546857077"
     website: https://segall.io
   about: >
-    Product-focused Full-Stack Developer with 15 years of experience turning complex systems into reliable products. 
-    Specializing in AI-native workflows and high-reliability systems, I value correctness and verification in every engineering decision. 
-    Known for high UI/UX sensitivity and improving developer adoption through internal tooling.
+    Product-focused Full-Stack Developer with 15 years of experience turning complex systems into polished, reliable user experiences.
+    Specializing in scalable React/TypeScript architectures and high-quality SaaS products, I value pixel-perfect UI and thoughtful engineering tradeoffs.
+    Known for high UI/UX sensitivity, strong frontend architecture, and improving developer experience through better tooling and practices.
 jobs:
   - company: Nsoft + Q.ai
     position: Fullstack Developer
     start: "2025"
     end: Present
     items:
-      - Architected internal platforms and back-office tools for core algorithms, featuring custom linters and automated test suites to ensure high reliability and developer adoption.
-      - Mentored JavaScript/React developers and performed code reviews to maintain high UI/UX and code-quality standards.
-      - Improved accessibility and interface clarity, simplifying interaction with complex data for end users.
+      - Built frontend features and internal tools for managing complex data flows in a high-caliber AI startup (acquired by Apple for ~$1.5B).
+      - Drove UI/UX quality through code reviews and component-level improvements, simplifying interaction with complex data for end users.
+      - Owned end-to-end feature delivery across frontend and backend in a fast-moving, ambiguous environment.
   - company: Testim.io (later acquired by Tricentis)
     position: Fullstack Developer
     start: "2021"
     end: "2025"
     items:
-      - Built and owned core features in a low-code E2E automation platform, focusing on reliability, stability, and real-world usability for developers.
-      - Developed and maintained a complex Chrome extension and production features, addressing flaky behavior and hard-to-reproduce failures.
-      - Helped translate a complex internal architecture into Testim Mobile, improving adoption and enterprise confidence.
-      - Led technical blogging and founded the Tricentis Israel developer community.
+      - Owned major frontend surfaces in a React/TypeScript SaaS platform, delivering pixel-perfect UI with a focus on performance, consistency, and developer UX.
+      - Built and maintained a complex Chrome extension from architecture to production, tackling hard-to-reproduce rendering and state management challenges.
+      - Led development of Testim Mobile — took the product end-to-end from requirements to ship, collaborating tightly with Product, Design, and Backend.
+      - Drove frontend quality practices including E2E/unit testing, CI improvements, and cross-functional collaboration with QA and sales to ship reliable features fast.
   - company: Dreamed Diabetes
     position: Fullstack Developer
     start: "2019"
     end: "2021"
     items:
-      - Developed FDA-approved systems for diabetes management, including insulin-pump logic and treatment protocols across web and mobile.
-      - Improved CI/CD workflows and optimized Selenium test suites via Django ORM, reducing execution time by 3–5 minutes per run.
+      - Built React frontend and React Native mobile app for an FDA-approved clinical decision support platform, with rigorous testing and quality standards.
+      - Championed UI/UX improvements and automated CI/CD workflows, reducing test execution time and improving developer experience across the team.
   - company: gizra
     position: Fullstack Developer
     start: "2011"
     end: "2018"
     items:
-      - Partnered with Harvard University to architect a unified design system and CI/CD pipelines, reducing maintenance overhead and deployment cycles.
-      - Maintained widely used open-source Drupal modules and led local developer community initiatives.
+      - Architected a drag-and-drop interface for Harvard University, enabling non-technical users to build and manage university sites — reducing costs and maintenance overhead.
+      - Built scalable, component-driven frontend architecture and maintained widely used open-source modules adopted across the community.
 languages:
   - name: Hebrew
     level: Native
