@@ -39,7 +39,7 @@ When tailoring the CV (src/manifest.yaml), **only job bullet points change**. Po
 
 **Roy's actual work:**
 - Full-stack across frontend/backend/CLI/Chrome extension (JS/TS-heavy)
-- **Led development of Testim Mobile** — built the mobile automation product, drawing on pain points experienced at DreaMed with mobile testing
+- **Drove major initiatives in Testim Mobile** — no formal team lead, but as a senior took ownership of key areas, shaped product decisions by bringing real mobile development experience to discussions with Product, explaining how day-to-day development would be affected
 - Evaluated and resolved customer support tickets — direct customer empathy
 - Wrote blog posts on the Testim blog and collaborated with marketing to increase product exposure
 - Worked cross-functionally with product/QA/sales to assess feature impact and improve it
@@ -61,8 +61,8 @@ When tailoring the CV (src/manifest.yaml), **only job bullet points change**. Po
 - For developer tools roles: built tools for developers (test automation), understood developer users deeply
 - For full-stack roles: worked across the entire stack including browser extension and CLI
 - For customer-facing/technical roles: support tickets, blog writing, understanding user pain points
-- For leadership roles: led Testim Mobile product, took initiative, drove product direction, mentored through code reviews
-- For mobile roles: led Testim Mobile, understood mobile automation challenges firsthand
+- For leadership roles: drove initiatives without formal title, shaped product direction, mentored through code reviews
+- For mobile roles: brought hands-on mobile dev experience to shape Testim Mobile, bridged engineering and product
 
 ---
 

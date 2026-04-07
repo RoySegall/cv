@@ -10,7 +10,8 @@ When tailoring the CV (src/manifest.yaml) for a job position:
 - **Change:** `cvFilename` — rename to reflect the target job/company for easy uploading
 - **Adjust:** `about` section — lightly adjust based on the baseline about text (see below), tailored to the target role. Keep the spirit and tone, shift emphasis.
 - **Lightly shape:** Volunteering descriptions
-- **Do NOT change:** Position titles, skills section
+- **Adjust:** `information.position` — Use "Senior Software Developer" as default, or adjust to match the role (e.g., "Senior Frontend Developer"). Keep it honest.
+- **Do NOT change:** Skills section
 
 **Baseline about section (use as starting point):**
 > Product-focused Full-Stack Developer with 15 years of experience turning complex systems into reliable products. Specializing in AI-native workflows and high-reliability systems, I value correctness and verification in every engineering decision. Known for high UI/UX sensitivity and improving developer adoption through internal tooling.

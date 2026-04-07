@@ -21,8 +21,7 @@ jobs:
     end: Present
     items:
       - Built frontend features and internal tools for managing complex data flows in a high-caliber AI startup (acquired by Apple for ~$1.5B).
-      - Drove UI/UX quality through code reviews and component-level improvements, simplifying interaction with complex data for end users.
-      - Owned end-to-end feature delivery across frontend and backend in a fast-moving, ambiguous environment.
+      - Drove UI/UX quality through code reviews and component-level improvements, owning end-to-end feature delivery in a fast-moving environment.
   - company: Testim.io (later acquired by Tricentis)
     position: Fullstack Developer
     start: "2021"
@@ -30,8 +29,8 @@ jobs:
     items:
       - Owned major frontend surfaces in a React/TypeScript SaaS platform, delivering pixel-perfect UI with a focus on performance, consistency, and developer UX.
       - Built and maintained a complex Chrome extension from architecture to production, tackling hard-to-reproduce rendering and state management challenges.
-      - Led development of Testim Mobile — took the product end-to-end from requirements to ship, collaborating tightly with Product, Design, and Backend.
-      - Drove frontend quality practices including E2E/unit testing, CI improvements, and cross-functional collaboration with QA and sales to ship reliable features fast.
+      - Drove key initiatives in Testim Mobile, shaping product decisions by translating real-world mobile development experience into actionable requirements.
+      - Improved frontend quality through E2E/unit testing, CI enhancements, and cross-functional collaboration with QA and sales.
   - company: Dreamed Diabetes
     position: Fullstack Developer
     start: "2019"
